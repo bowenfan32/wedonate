@@ -1,0 +1,40 @@
+.bg {
+	background-size: cover;
+	background-position: center;
+
+	&.bg-ripple {
+
+		background-image: url('../img/bg/bg_ripple.jpg');
+
+	}
+
+	&.bg-white-world {
+
+		background-image: url('../img/bg/bg_white_01.jpg');
+
+	}
+
+	&.bg-black {
+		background: #202020;
+	}
+
+	&.bg-blue {
+		background: #4bc8f4;
+	}
+
+	&.bg-ripple {
+		background: #4bc8f4;
+	}
+
+	&.bg-map {
+		background-image: url('../img/bg/bg_map.png');
+	}
+
+	&.bg-white-pattern {
+		background-image: url('../img/bg/bg_white_pattern.jpg');
+	}
+
+	&.bg-grey {
+		background-image: url('../img/bg/bg_grey.jpg');
+	}
+}

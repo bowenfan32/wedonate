@@ -1,0 +1,20 @@
+.menu-top {
+	position: fixed;
+	top: 1em;
+	right: 0;
+	width: 100%;
+
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			margin-left: 1em;
+			a {
+				color: $primary-black;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

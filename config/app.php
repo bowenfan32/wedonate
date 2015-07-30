@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG'),
+    // 'debug' => env('APP_DEBUG'),
+    'debug' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +27,8 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://localhost/wedonate/wedonate/public',
+    // 'url' => 'http://wedonate.org',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +80,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'iysVCenpgpdRArzPMGsjnyafyNqIco8h'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -144,6 +146,14 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * Extras
+        */
+        'Zizaco\Entrust\EntrustServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
+        'Artdarek\OAuth\OAuthServiceProvider',
+        'Ignited\LaravelOmnipay\LaravelOmnipayServiceProvider',
+
     ],
 
     /*
@@ -191,6 +201,18 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+        * Extras
+        */
+        'Entrust'   => 'Zizaco\Entrust\EntrustFacade',
+        'Form'=> 'Illuminate\Html\FormFacade',
+        'HTML'=> 'Illuminate\Html\HtmlFacade',
+
+        'Uuid' => 'Webpatser\Uuid\Uuid',
+        'OAuth' => 'Artdarek\OAuth\Facade\OAuth',
+        'Ignited\LaravelOmnipay\Facades\OmnipayFacade',
+
 
     ],
 
