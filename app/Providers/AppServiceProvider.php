@@ -8,15 +8,15 @@ use App\Models\Cause;
 
 class AppServiceProvider extends ServiceProvider {
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
+    /* Bootstrap any application services.
      */
+     /* 
+	* @return void
+      */
     public function boot() {
 
-      View::share('GLOBAL_CAUSES', Cause::all());
-
+     View::share('GLOBAL_CAUSES', Cause::all());
+      
     }
 
     /**

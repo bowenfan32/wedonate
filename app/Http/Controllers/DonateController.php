@@ -69,12 +69,22 @@ class DonateController extends BaseController {
 		$payment->cause_uuid = $request->input('cause');
 		$payment->amount = $request->input('amount');
 
+		
+		// if ($payment->amount<6) {
+			
+			// //return error
+			// return [
+			// 'success' => '0',
+			// 'messages' => 'Donation is less than 7 dollars'
+		// ];
+		// }
+		// else {
 		return [
 			'success' => '1',
 			'results' => $request->input('email'),
 			'messages' => 'Donate.'
 		];
-
+		//}
 	}
 
 	public function postStripe(Request $request) {
@@ -104,8 +114,11 @@ class DonateController extends BaseController {
 		$transaction = $gateway->purchase(['amount' => (float)($payment->amount), 'currency' => 'AUD', 'token' => $payment->token_id]);
 
 		$response = $transaction->send();
-
-    if ($response->isSuccessful()) {
+	if ($payment->amount<7) {
+			// var_dump($response);
+			return redirect(route('getDonationAmountFailure', $payment->uuid));
+		}
+    else if ($response->isSuccessful()) {
 			$payment->status = 'paid';
 			$payment->charge_id = $response->getTransactionReference();
 			$payment->save();
@@ -126,6 +139,7 @@ class DonateController extends BaseController {
 
 			// WEDONATE keeps
 			$wedonate_funds = WedonateFund::where('type', '=', 'single')->first();
+		//	return($wedonate_funds->amount);
 			$amount = $wedonate_funds->amount + $splits->weDonate_keeps;
 			$wedonate_funds->amount = $amount;
 			$wedonate_funds->save();
@@ -245,4 +259,12 @@ class DonateController extends BaseController {
 
 	}
 
+	public function getDonationAmountFailure(Request $request, $uuid) {
+
+		$payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
+
+		return view('donate.amountfailure')
+			->with('payment', $payment);
+
+	}
 }

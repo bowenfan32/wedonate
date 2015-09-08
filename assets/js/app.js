@@ -5,7 +5,7 @@ const SITEURL = 'http://localhost:8000';
 // Redirect after X amount of seconds
 function countdown_redirect(url) {
 	window.setTimeout(function () {
-    window.location.href = url;
+     	window.location.href = url;
   }, 2000);
 }
 

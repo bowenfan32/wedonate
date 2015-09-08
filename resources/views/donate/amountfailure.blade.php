@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="page-header">
-					<h1>Donation Error!</h1>
+					<h1>Donation Amount must be 7 dollars or over!</h1>
 				</div>
 				
 			</div>

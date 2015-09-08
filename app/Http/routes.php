@@ -45,6 +45,10 @@ Route::get('/donate/success/{uuid}', [
 Route::get('/donate/failure/{uuid}', [
   'as' => 'getDonationFailure', 'uses' => 'DonateController@getDonationFailure'
 ]);
+//VK. Added route for donation amount failure
+Route::get('/donate/amountfailure/{uuid}', [
+  'as' => 'getDonationAmountFailure', 'uses' => 'DonateController@getDonationAmountFailure'
+]);
 
 // Base
 Route::get('/', [

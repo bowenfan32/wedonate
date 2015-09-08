@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder {
 
     public function run() {
 
-        $this->call('UserTableSeeder3');
+        $this->call('UserTableSeeder2');
 
     }
 
@@ -28,10 +28,10 @@ class UserTableSeeder2 extends Seeder {
 
     public function run() {
 
-      // $wedonate_funds = new WedonateFund;
-      // $wedonate_funds->type = 'single';
-      // $wedonate_funds->uuid = Uuid::generate(4);
-      // $wedonate_funds->save();
+       $wedonate_funds = new WedonateFund;
+       $wedonate_funds->type = 'single';
+       $wedonate_funds->uuid = Uuid::generate(4);
+       $wedonate_funds->save();
 
       $wedonate_funds = new WedonateFund;
       $wedonate_funds->type = 'subscription';
@@ -50,7 +50,7 @@ class UserTableSeeder extends Seeder {
       $user->email = 'j@wedonate.org';
       $user->username = 'j@wedonate.org';
       $user->registered_provider = 'email';
-      $user->password = Hash::make('Widaudtwdm#7');
+      $user->password = Hash::make('password1');
       $user->uuid = Uuid::generate(4);
 			$user->registered_ip = '127.0.0.1';
 			$user->last_login_ip = null;
@@ -67,10 +67,10 @@ class UserTableSeeder extends Seeder {
 			$profile->save();
 
       $user2 = new User;
-      $user2->email = 'ntuanb@gmail.com';
-      $user2->username = 'ntuanb@gmail.com';
+      $user2->email = 'victor.k@wedonate.org';
+      $user2->username = 'victor.k@wedonate.org';
       $user2->registered_provider = 'email';
-      $user2->password = Hash::make('cyanacid13');
+      $user2->password = Hash::make('password1');
       $user2->uuid = Uuid::generate(4);
 			$user2->registered_ip = '127.0.0.1';
 			$user2->last_login_ip = null;
@@ -80,9 +80,9 @@ class UserTableSeeder extends Seeder {
 
       $profile = new UserProfile;
 			$profile->user_id = $user2->id;
-			$profile->display_name = 'Tuan Bui';
-			$profile->firstname = 'Tuan';
-			$profile->lastname = 'Bui';
+			$profile->display_name = 'Victor K';
+			$profile->firstname = 'Victor';
+			$profile->lastname = 'K';
 			$profile->ranking = 0;
 			$profile->save();
 
@@ -101,9 +101,9 @@ class UserTableSeeder extends Seeder {
       $user = User::where('email', '=', 'j@wedonate.org')->first();
       $user->attachRole($role2);
 
-      $user = User::where('email', '=', 'ntuanb@gmail.com')->first();
+      $user = User::where('email', '=', 'victor.k@wedonate.org')->first();
       $user->attachRole($role);
-
+      
       $permission = new Permission();
       $permission->name = 'developer';
       $permission->display_name = 'Developer';
