@@ -8,6 +8,9 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 
 use Illuminate\Http\Request;
 
+use App\Models\Cause;
+use App\Models\SectionMeta;
+
 class PageController extends BaseController {
 
 	public function getPages(Request $request) {
@@ -28,12 +31,6 @@ class PageController extends BaseController {
 
 	}
 
-	public function getPrivacy(Request $request) {
-
-		return view('page.privacy');
-
-	}
-
 	public function getFaq(Request $request) {
 
 		return view('page.faq');
@@ -46,9 +43,20 @@ class PageController extends BaseController {
 
 	}
 
+	public function getPrivacy(Request $request) {
+
+		return view('page.privacy');
+
+	}
+
 	public function getDonate(Request $request) {
 
-		return view('page.donate');
+		$causes = Cause::where('active', 1)->get();
+		$causeofthemonth = SectionMeta::where('meta_key', 'sort')->get();
+
+		return view('page.donate')
+			->with('causes', $causes)
+			->with('causeofthemonth', $causeofthemonth);
 
 	}
 

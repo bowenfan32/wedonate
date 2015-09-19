@@ -22,7 +22,7 @@ class CreateDonateionsTable extends Migration
         $table->integer('user_id');
         $table->integer('recipient_id')->nullable();
         $table->integer('cause_id');
-        $table->integer('DGR_status')->nullable();
+        $table->integer('DGR')->nullable();
 
         $table->double('amount')->nullable();
 

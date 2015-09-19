@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder {
 
     public function run() {
 
-        $this->call('UserTableSeeder3');
+        $this->call('UserTableSeeder');
 
     }
 
@@ -28,10 +28,10 @@ class UserTableSeeder2 extends Seeder {
 
     public function run() {
 
-      // $wedonate_funds = new WedonateFund;
-      // $wedonate_funds->type = 'single';
-      // $wedonate_funds->uuid = Uuid::generate(4);
-      // $wedonate_funds->save();
+      $wedonate_funds = new WedonateFund;
+      $wedonate_funds->type = 'single';
+      $wedonate_funds->uuid = Uuid::generate(4);
+      $wedonate_funds->save();
 
       $wedonate_funds = new WedonateFund;
       $wedonate_funds->type = 'subscription';

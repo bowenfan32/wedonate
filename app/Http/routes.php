@@ -47,8 +47,11 @@ Route::get('/donate/failure/{uuid}', [
 ]);
 
 // Base
+// Route::get('/', [
+//   'as' => 'getHome', 'uses' => 'HomeController@getHome'
+// ]);
 Route::get('/', [
-  'as' => 'getHome', 'uses' => 'HomeController@getHome'
+  'as' => 'getHome', 'uses' => 'PageController@getVolunteer'
 ]);
 
 // Connet
@@ -77,6 +80,9 @@ Route::get('/dashboard', [
 Route::get('/dashboard/pages', [
   'as' => 'getPages', 'middleware' => 'auth.wedonate', 'uses' => 'PageController@getPages'
 ]);
+Route::get('/dashboard/sections/', [
+  'as' => 'getSections', 'middleware' => 'auth.wedonate', 'uses' => 'PageController@getSections'
+]);
 Route::get('/dashboard/causes', [
   'as' => 'getCauses', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCauses'
 ]);
@@ -86,6 +92,21 @@ Route::get('/dashboard/causes/create', [
 Route::post('/dashboard/causes/create', [
   'as' => 'getCausesCreate', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@postCausesCreate'
 ]);
+
+// EDIT CAUSE
+Route::get('/dashboard/causes/{uuid}/edit', [
+  'as' => 'getCausesEdit', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCausesEdit'
+]);
+Route::post('/dashboard/causes/{uuid}/edit', [
+  'as' => 'postCausesEdit', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@postCausesEdit'
+]);
+Route::get('/dashboard/causes/{uuid}/remove', [
+  'as' => 'getCauseRemove', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCauseRemove'
+]);
+Route::post('/dashboard/causes/{uuid}/add-image', [
+  'as' => 'postCauseImage', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@postCauseImage'
+]);
+
 Route::get('/dashboard/causes/{uuid}', [
   'as' => 'getCause', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCause'
 ]);
@@ -140,4 +161,27 @@ Route::get('/legal/privacy', [
 ]);
 Route::get('/legal/terms-and-conditions', [
   'as' => 'getTerms', 'uses' => 'PageController@getTerms'
+]);
+
+// Sections
+Route::get('/dashboard/sections', [
+  'as' => 'getSections', 'uses' => 'SectionController@getSections'
+]);
+Route::get('/dashboard/sections/create', [
+  'as' => 'getCreateSection', 'uses' => 'SectionController@getCreateSection'
+]);
+Route::post('/dashboard/sections/create', [
+  'as' => 'postCreateSection', 'uses' => 'SectionController@postCreateSection'
+]);
+Route::get('/dashboard/sections/cause-of-the-month', [
+  'as' => 'getCauseoftheMonthSection', 'uses' => 'SectionController@getCauseoftheMonthSection'
+]);
+Route::post('/dashboard/sections/cause-of-the-month/add', [
+  'as' => 'postCauseoftheMonthAdd', 'uses' => 'SectionController@postCauseoftheMonthAdd'
+]);
+Route::post('/dashboard/sections/cause-of-the-month/sort', [
+  'as' => 'postCauseoftheMonthSort', 'uses' => 'SectionController@postCauseoftheMonthSort'
+]);
+Route::post('/dashboard/sections/cause-of-the-month/remove', [
+  'as' => 'postCauseoftheMonthRemove', 'uses' => 'SectionController@postCauseoftheMonthRemove'
 ]);

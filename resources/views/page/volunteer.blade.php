@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="bg bg-black c-fff ta-center" style="padding: 150px 50px;">
+<section class="bg bg-black c-fff ta-center" style="padding: 225px 50px;">
 	<div class="container">
 		<div class="vertical-center">
 			<div class="row mb-2">
@@ -28,7 +28,7 @@
 	</div>
 </section>
 
-<section class="bg bg-blue ta-center" style="padding: 150px 50px;">
+<section class="bg bg-blue ta-center" style="padding: 200px 50px;">
 	<div class="container">
 		<div class="vertical-center">
 			<div class="row mb-2">
@@ -50,6 +50,14 @@
 					<h3>4. Final Interview</h3>
 				</div>
 			</div>
+
+			<div class="row" style="padding-top: 3em;">
+<div class="col-sm-12 ta-center">
+	<a class="typeform-share" style="border:1px solid #fff; padding: 24px 40px; display: inline-block; border-radius: 2px; color: #fff;" href="https://wedonatemore.typeform.com/to/xvkq99" data-mode="2" target="_blank">Apply Now</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -64,9 +72,16 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg bg-black ta-center" style="padding: 250px 50px; color: #fff;">
+	<div class="container">
+		<div class="vertical-center">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1 class="mt-0">"Time is free, but it's priceless. You can't own it, but you can use it. You can't keep it, but you can spend it. Once you've lost it you can never get it back."</h1>"
+					<h1 class="mt-0">"Time is free, but it's priceless. You can't own it, but you can use it. You can't keep it, but you can spend it. Once you've lost it you can never get it back."</h1>
 
 					<h3 class="mb-0">Harvey MacKay</h3>
 				</div>
@@ -74,6 +89,5 @@
 		</div>
 	</div>
 </section>
-
 
 @stop

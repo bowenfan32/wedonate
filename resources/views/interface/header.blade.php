@@ -1,4 +1,4 @@
-<nav class="navbar menu-primary">
+<!-- <nav class="navbar menu-primary">
   <div class="container full-size">
     <div class="col-sm-3">
       <a href="{{ route('getDonate') }}">
@@ -21,12 +21,12 @@
         </div>
       </a>
     </div> -->
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
       <a href="{{ route('getVolunteer') }}">
         <div class="rect">
           <p>Volunteer</p>
         </div>
       </a>
     </div>
-  </div>
-</nav>
+  </div> 
+</nav> -->

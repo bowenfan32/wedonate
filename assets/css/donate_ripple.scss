@@ -1,6 +1,13 @@
+.choose-a-cause {
+	.select-container {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
 .donate-ripple {
-	.fixed-size {
-		width: 970px;
+	.container {
+		width: 970px !important;
 	}
 	.ripple {
 		position: relative;
@@ -17,23 +24,23 @@
 			}
 
 			&.keep {
-				left: 324px;
+				left: 162px;
 				bottom: 28px;
 			}
 
 			&.iDonate {
 				bottom: 145px;
-				left: 596px;
+				left: 444px;
 			}
 
 			&.uDonate {
-				top: 105px;
-				left: 180px;
+				top: 104px;
+				left: 25px;
 			}
 
 			&.weDonate {
 				top: 44px;
-				right: 406px;
+    		right: 256px;
 			}
 		}
 
@@ -45,7 +52,6 @@
 	}
 	.choose {
 		h1 {
-		  padding-left: 3em;
 			input {
 				&:focus {
 					outline: none;

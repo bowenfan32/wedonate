@@ -8,10 +8,12 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 
 use App\Models\PaymentsStripe;
+use App\Models\PaymentError;
 use App\Models\CardsStripe;
 use App\Models\Donation;
 use App\Models\DonationSplit;
 use App\Models\Cause;
+use App\Models\CauseMeta;
 use App\Models\User;
 use App\Models\UserProfile;
 use App\Models\WedonateFund;
@@ -21,6 +23,7 @@ use Omnipay\Omnipay;
 use Webpatser\Uuid\Uuid;
 
 use DB;
+use Mail;
 
 class DonateController extends BaseController {
 
@@ -79,7 +82,8 @@ class DonateController extends BaseController {
 
 	public function postStripe(Request $request) {
 
-		// TODO: batch the updates into one call. Need a redis? or somethign that did it all sequentially.
+		// TODO: batch the updates into one call. Need a somethign that does it all sequentially.
+		// TODO: Fix all this. not good to do it all here.
 
 		$cause = Cause::where('uuid', $request->input('cause'))->first();
 		$user = Auth::user();
@@ -99,7 +103,8 @@ class DonateController extends BaseController {
 		$gateway = Omnipay::create('Stripe');
 		$gateway->initialize(array(
    	// 	'apiKey' => 'sk_test_C84t7Wx9WghYFcTEBnQ5ReW3', // ntuanb@gmail.com
-   		'apiKey' => 'sk_test_4Mw3CFZ7rUwIiJr3cl3ZKlRB', // michael
+   	// 	'apiKey' => 'sk_test_4Mw3CFZ7rUwIiJr3cl3ZKlRB', // michael
+   	// 	'apiKey' => 'sk_live_4Mw3J2UYXIETcKOIokDmXNvF', // real michael
    	));
 		$transaction = $gateway->purchase(['amount' => (float)($payment->amount), 'currency' => 'AUD', 'token' => $payment->token_id]);
 
@@ -142,6 +147,11 @@ class DonateController extends BaseController {
 			$split->donation_id = $donation->id;
 			$split->save();
 
+			$cause = Cause::where('id', $cause->id)->first();
+			$cause->total_donations += $split->amount;
+			$cause->number_of_donations += 1;
+			$cause->save();
+
 			// UDONATE REFERRER
 			$split = new DonationSplit;
 			$split->uuid = Uuid::generate(4);
@@ -177,7 +187,7 @@ class DonateController extends BaseController {
 			$split->status = 1;
 			$split->donation_id = $donation->id;
 			$split->save();
-			
+
 			$ref = UserProfile::where('user_id', $split->recipient_id)->first();
 			$ref->iDonate += $splits->uDonate_referrer;
 			$ref->save();
@@ -206,6 +216,12 @@ class DonateController extends BaseController {
 			$users_count = User::all()->count();
 			$split = (float)($splits->weDonate) / $users_count;
 			DB::table('user_profiles')->increment('iDonate', $split);
+			DB::table('user_profiles')->increment('total_donations', $split);
+
+			// Split if for each donation too
+			$causes_count = Cause::all()->count();
+			$split = (float)($splits->weDonate) / $causes_count;
+			DB::table('causes')->where('active', 1)->increment('total_donations', $split);
 
 			// TODO: Do rank
 			$ranks = UserProfile::all();
@@ -221,7 +237,24 @@ class DonateController extends BaseController {
 			return redirect(route('getDonationSuccess', $payment->uuid));
 		}
 		else {
-			// var_dump($response);
+
+			$message = $response->getMessage();
+
+			$donation_errors = new PaymentError;
+			$donation_errors->uuid = Uuid::generate(4);
+			$donation_errors->payment_id = $payment->id;
+			$donation_errors->error_message = $message;
+			$donation_errors->save();
+
+			$user = Auth::user();
+
+			$data = new \stdClass();
+			$data->title =
+
+			Mail::send('emails.donate-result', $data, function($m) {
+	        $m->to($user->email, $user->name)->subject('weDonate - Donation Unsuccessful!');
+	    });
+
 			return redirect(route('getDonationFailure', $payment->uuid));
 		}
 
@@ -239,9 +272,11 @@ class DonateController extends BaseController {
 	public function getDonationFailure(Request $request, $uuid) {
 
 		$payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
+		$error = PaymentError::where('payment_id', '=', $payment->id)->first();
 
 		return view('donate.failure')
-			->with('payment', $payment);
+			->with('payment', $payment)
+			->with('error', $error);
 
 	}
 

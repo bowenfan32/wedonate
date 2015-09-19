@@ -1,6 +1,6 @@
 // GlOBALS
-const SITEURL = 'http://localhost:8000';
-// const SITEURL = 'http://wedonate.org';
+// const SITEURL = 'http://localhost:8000';
+const SITEURL = 'http://wedonate.org';
 
 // Redirect after X amount of seconds
 function countdown_redirect(url) {
@@ -17,7 +17,7 @@ function stripeResponseHandler(status, response) {
     // Show the errors on the form
     $form.find('.payment-errors').text(response.error.message);
     $form.find('button').prop('disabled', false);
-		$button.after('<div class="spinner d-none mt-1""><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
+		// $button.after('<div class="spinner d-none mt-1""><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
 		$form.find('.spinner').fadeIn('fast');
 
   } else {
@@ -154,7 +154,8 @@ $(document).ready(function() {
 
 	// Global Donate
 
-	Stripe.setPublishableKey('pk_test_4Mw3HArEb1pwu6VjJFRYJx4v');
+	// Stripe.setPublishableKey('pk_test_4Mw3HArEb1pwu6VjJFRYJx4v');
+	Stripe.setPublishableKey('pk_live_4Mw3QcIDxE5B8cxqhCAAWTY7');
 
 	$(document).on('submit', '#global-donate-popup form', function(e) {
     var $form = $(this);
@@ -361,9 +362,14 @@ $(document).ready(function() {
 	init_interval( $('.scramble.give'), give );
 	init_interval( $('.scramble.more'), more );
 
+	// Calculate the donate
+
 	$('.donate-ripple .choose input').on('input paste copy cut keyup keydown', function(event) {
 
-		if (event.keyCode >= 48 && event.keyCode <= 57 && $(this).val() >= 7) {
+		var current = $(this);
+
+		if (event.keyCode >= 48 && event.keyCode <= 57 && current.val() >= 7) {
+			$('.donate-ripple .choose .label').css('display', 'none');
 
 			// $('.amount-error').html('');
 			// $('.amount-error').removeClass('alert alert-danger');
@@ -381,12 +387,28 @@ $(document).ready(function() {
 
 			$('.donate-form input[name=amount]').val(my_amount);
 		}
-		// if amoutn less than 7
 		else {
-			// $('.amount-error').addClass('alert alert-danger');
-			// $('.amount-error').html('Please enter an amount greater than $7.');
+			$('.donate-ripple .choose .label').css('display', 'inline');
 		}
 
+	});
+
+	// Slick teh donatin choose a cause area
+
+	$('.choose-a-cause .slick').slick({
+		autoplay: 'true',
+		arrows: 'false',
+		nav: 'false'
+	});
+
+	// Activate combobox
+	$('.choose-a-cause select').combobox();
+	// Detect the change
+	$('.choose-a-cause .select-container .combobox-container input[type=hidden]').change(function() {
+		var value = $(this).val();
+		var name = $('#choose-a-cause').find('option[value=' + value + ']');
+		$('.donate.popup form input[name=cause]').val(value);
+		$('.donate.popup form input[name=cause_name]').val(name.attr('data-name'));
 	});
 
 });

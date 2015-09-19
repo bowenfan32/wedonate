@@ -12,16 +12,16 @@ class Cause extends Model {
 
   }
 
-	public function number_of_donations() {
-
-    return $this->hasMany('\App\Models\Donation', 'cause_id')->count();
-
-	}
-
-	public function total_donations() {
-
-    return $this->hasMany('\App\Models\DonationSplit', 'cause_id')->where('type', '=', 'iDonate')->sum('amount');
-
-  }
+	// public function number_of_donations() {
+	//
+  //   return $this->hasMany('\App\Models\Donation', 'cause_id')->count();
+	//
+	// }
+	//
+	// public function total_donations() {
+	//
+  //   return $this->hasMany('\App\Models\DonationSplit', 'cause_id')->where('type', '=', 'iDonate')->sum('amount');
+	//
+  // }
 
 }

@@ -10,15 +10,18 @@ use App\Models\User;
 use App\Models\UserProfile;
 use App\Models\Donation;
 use App\Models\WedonateFund;
+use App\Models\CauseMeta;
 use App\Role;
 
 use Hash;
+use File;
+use Storage;
 
 class AdminWedonateController extends Controller {
 
 	public function getCause(Request $request, $uuid) {
 
-		$cause = cause::where('uuid', $uuid)->first();
+		$cause = Cause::where('uuid', $uuid)->first();
 
 		return view('admin.wedonate.cause')
 			->with('cause', $cause);
@@ -82,10 +85,88 @@ class AdminWedonateController extends Controller {
 		else {
 			$cause->active = 0;
 		}
+		$cause->total_donations = 0;
+		$cause->number_of_donations = 0;
 		$cause->save();
+
+		$cause_meta = new CauseMeta;
+		$cause_meta->cause_id = $cause->id;
+		$cause_meta->save();
 
 		return redirect(route('getCausesCreate'))
 			->with('messages', 'Causes created.');
+
+	}
+
+	public function getCausesEdit(Request $request, $uuid) {
+
+		$cause = Cause::where('uuid', $uuid)->first();
+
+		return view('admin.wedonate.causes_edit')
+			->with('cause', $cause);
+
+	}
+
+	public function postCausesEdit(Request $request, $uuid) {
+
+		$cause = Cause::where('uuid', $uuid)->first();
+
+		$cause->name = $request->input('name');
+		$cause->description = $request->input('description');
+		if ($request->has('DGR')) {
+			$cause->DGR = $request->input('DGR');
+		}
+		else {
+			$cause->DGR = 0;
+		}
+		if ($request->has('active')) {
+			$cause->active = $request->input('active');
+		}
+		else {
+			$cause->active = 0;
+		}
+		$cause->save();
+
+		return redirect(route('getCauses'));
+
+	}
+
+	// TDOO: Fix to use AWS, store image properly in db, have multiple sizing. etc.
+	public function postCauseImage(Request $request, $uuid) {
+
+		$cause = Cause::where('uuid', $uuid)->first();
+
+
+		// Local
+		// $storage_location = '/public/uploads/ci/';
+		// $url_location = '/uploads/ci/';
+
+		$storage_location = '/home/wedonate/public/uploads/ci/';
+		$url_location = '/uploads/ci/';
+
+		File::delete(base_path() . $storage_location . $cause->image);
+
+		// Upload it
+		$image_name = Uuid::generate(4) . '.' . $request->file('file')->getClientOriginalExtension();
+		// $request->file('file')->move(base_path() . $storage_location, $image_name);
+		$request->file('file')->move('/home/wedonate/public_html/uploads/ci/', $image_name);
+
+		// Setup our media to be saved
+		$cause->image = $image_name;
+		$cause->save();
+
+    return [
+			'success' => '1',
+			'url', $cause->image
+		];
+
+	}
+
+	public function getCauseRemove(Request $request, $uuid) {
+
+		$cause = Cause::where('uuid', $uuid)->delete();
+
+		return redirect(route('getCauses'));
 
 	}
 

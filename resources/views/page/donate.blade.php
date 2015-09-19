@@ -21,17 +21,48 @@
 	</div>
 </section>
 
-<section class="bg bg-blue donate-ripple c-fff" style="padding: 120px 50px;">
-	<div class="container full-size">
+<section class="bg ta-center choose-a-cause" style="padding: 80px 50px;">
+	<div class="container">
 		<div class="vertical-center">
-			<div class="row">
+			<div class="row mb-1">
 				<div class="col-sm-12">
-					<div class="choose">
-						<h1>Choose an amount: <input value="7"></h1>
+					<div class="slick">
+						@foreach($causeofthemonth as $cause)
+					  	<div>
+								<img src="/uploads/ci/{{ $cause->cause->image }}" style="width: 100%;">
+							</div>
+						@endforeach
 					</div>
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-sm-12">
+					<div class="select-container">
+						<select id="choose-a-cause">
+							<option>Search for a cause</option>
+							@foreach($causes as $cause)
+			        	<option value="{{ $cause->uuid }}" data-name="{{ $cause->name }}">{{ $cause->name }}</option>
+							@endforeach
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg bg-blue donate-ripple c-fff" style="padding: 120px 50px;">
+	<div class="container">
+		<div class="vertical-center">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="choose">
+						<h1>Choose an amount: <input value="7"> <span class="label label-danger d-none">Minimum of $7</span></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3"></div>
 				<div class="col-sm-12 ta-center">
 					<div class="ripple">
 						<img src="/img/DonatePag-Sec4.jpg">

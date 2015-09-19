@@ -38,7 +38,7 @@ gulp.task('js', function () {
   .pipe(jshint('.jshintrc'))
   .pipe(jshint.reporter('default'))
   .pipe(concat('app.js'))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulp.dest('./public/js'));
 });
 

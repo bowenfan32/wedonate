@@ -13,7 +13,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ route('getCauses') }}">Causes</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Causes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ route('getCauses') }}">View All Causes</a></li>
+            <li><a href="{{ route('getCauses') }}">Cause of the Month</a></li>
+          </ul>
+        </li>
         <li><a href="{{ route('getFunds') }}">Funds</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donations <span class="caret"></span></a>
@@ -30,7 +36,13 @@
 		        <li><a href="{{ route('getPermissions') }}">Permissions</a></li>
 					</ul>
 				</li>
-        <li><a href="{{ route('getPages') }}">Pages</a></li>
+        <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages and Sections <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+            <li><a href="{{ route('getPages') }}">Pages</a></li>
+            <li><a href="{{ route('getSections') }}">Sections</a></li>
+					</ul>
+				</li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

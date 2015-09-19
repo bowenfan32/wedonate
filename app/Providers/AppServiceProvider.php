@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider {
      */
     public function boot() {
 
-      View::share('GLOBAL_CAUSES', Cause::all());
+      // View::share('GLOBAL_CAUSES', Cause::all());
 
     }
 

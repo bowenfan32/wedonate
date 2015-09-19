@@ -12,7 +12,7 @@
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs mb-1" role="tablist">
-            <!-- <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li> -->
+            <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
             <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
           </ul>
 
@@ -57,6 +57,7 @@
               <form id="loginForm" data-parsley-validate>
                 {!! Form::token() !!}
                 <ul class="form-errors"></ul>
+      					<input type="hidden" name="url" value="{{ Request::url() }}">
                 <div class="form-group">
                   <label>Email address</label>
                   <input type="email" name="email" class="form-control" placeholder="Email" required>

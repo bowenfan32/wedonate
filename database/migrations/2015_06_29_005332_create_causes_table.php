@@ -22,6 +22,9 @@ class CreateCausesTable extends Migration
 
         $table->integer('DGR')->default('0');
 
+        $table->double('total_donations', 10)->default('0');
+        $table->integer('number_of_donations')->default('0');
+
         $table->integer('active')->default('0');
         $table->timestamps();
 
@@ -38,7 +41,6 @@ class CreateCausesTable extends Migration
         $table->integer('cause_of_month_count')->default('0');
 
         $table->string('featured_image')->nullable();
-        $table->double('total_donations', 10)->default('0');
 
         $table->timestamps();
 

@@ -12,16 +12,13 @@
 					<input type="hidden" name="uuid" value="@if (Auth::check()){{ Auth::user()->uuid }}@endif">
 
 					<div class="form-group">
-						<label>Choose your cause</label>
-						<select name="cause" class="form-control">
-              @foreach($GLOBAL_CAUSES as $cause)
-				       <option value="{{ $cause->uuid }}" data-name="{{ $cause->name }}">{{ $cause->name }}</option>
-						  @endforeach
-            </select>
+						<label>Your chosen cause:</label>
+            <input type="hidden" name="cause">
+            <input type="text" name="cause_name" class="form-control"  readonly="readonly">
 				  </div>
 					<div class="form-group">
 						<label>Amount</label>
-						<input class="form-control" name="amount" value="7" data-parsley-type="number" required>
+						<input class="form-control" name="amount" value="7" data-parsley-type="number" readonly="readonly">
 				  </div>
 					<div class="form-group">
 						<label>Card Number</label>
@@ -32,11 +29,11 @@
 						<input type="text" class="form-control" size="4" data-stripe="cvc" required>
 				  </div>
 					<div class="form-group">
-						<label>Expiration (MM/YYYY)</label>
+						<label>Expiration (MM)</label>
 						<input type="text" class="form-control" size="2" data-stripe="exp-month" required>
 				  </div>
 					<div class="form-group">
-						<label>Year</label>
+						<label>Year (YYYY)</label>
 						<input type="text" class="form-control" size="4" data-stripe="exp-year" required>
 				  </div>
 					<!-- <div class="form-group">
@@ -54,7 +51,7 @@
 						data-email="">
 					</script>-->
 
-					<button id="donate" class="btn btn-secondary btn-block">Donate</button>
+					<!-- <button id="donate" class="btn btn-secondary btn-block">Donate</button> -->
 
 				</form>
       </div>

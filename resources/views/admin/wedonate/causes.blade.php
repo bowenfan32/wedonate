@@ -43,14 +43,16 @@
 						<th>Number of Donations</th>
 						<th>Total Donations</th>
 						<th>DGR</th>
+						<th>Tools</th>
 					</tr>
 					@foreach($causes as $cause)
 
 						<tr>
 							<td>{{ $cause->name }}</td>
-							<td>{{ $cause->number_of_donations() }}</td>
-							<td>${{ $cause->total_donations() }}</td>
+							<td>{{ $cause->number_of_donations }}</td>
+							<td>${{ $cause->total_donations }}</td>
 							<td>@if ($cause->DGR == 1)Yes @else No @endif</td>
+							<td><a href="{{ route('getCausesEdit', $cause->uuid)}}" class="c-black td-none">edit</a></td>
 						</tr>
 
 					@endforeach

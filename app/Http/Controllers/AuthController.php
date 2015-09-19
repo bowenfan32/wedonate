@@ -38,13 +38,14 @@ class AuthController extends Controller {
 
 			$email = $request->input('email');
 			$password = $request->input('password');
+			$url = $request->input('url');
 
 			if (Auth::attempt(['username' => $email, 'password' => $password])) {
 				return [
 					'success' => '1',
 					'results' => '',
 					'messages' => 'Successfully connected.',
-					'redirect' => '/dashboard'
+					'redirect' => $url
 				];
 			}
 			else {

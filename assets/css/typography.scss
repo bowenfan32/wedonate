@@ -8,7 +8,12 @@
 
 .tt-caps { text-transform: capitalize; }
 
+.td-none { text-decoration: none; }
+.td-none:hover { text-decoration: none; }
+
 .fs-18 { font-size: 18px; }
 .fs-24 { font-size: 24px; }
 
 .fw-700 { font-weight: 700; }
+
+.c-black { color: $primary-black; }
