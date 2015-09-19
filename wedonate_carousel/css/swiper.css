@@ -1,0 +1,41 @@
+.carousel-cause {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/bg_map.png");
+  background-size: cover;
+  padding: 50px 0; }
+  .carousel-cause h1 {
+    text-align: center; }
+  .carousel-cause .swiper-container {
+    width: 100%;
+    padding: 30px 0;
+    height: 390px; }
+  .carousel-cause .swiper-slide, .carousel-cause .image {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    outline: 10px solid rgba(75, 200, 244, 0.5); }
+  .carousel-cause .image {
+    cursor: pointer;
+    position: relative; }
+    .carousel-cause .image.selected:after {
+      content: url("../img/vectors/tick.png");
+      opacity: 0.8;
+      position: absolute;
+      bottom: 0;
+      right: 10px; }
+  .carousel-cause .caption {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px; }
+  .carousel-cause .swiper-button-next, .carousel-cause .swiper-button-prev {
+    background-image: url("../img/vectors/arrow.png");
+    background-size: 46px 44px; }
+  .carousel-cause .swiper-button-next {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+
+/*# sourceMappingURL=swiper.css.map */
