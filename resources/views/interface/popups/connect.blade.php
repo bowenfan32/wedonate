@@ -12,7 +12,7 @@
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs mb-1" role="tablist">
-            <!-- <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li> -->
+             <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
             <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
           </ul>
 
@@ -41,7 +41,9 @@
       					</div>
       					<div class="form-group">
       						<label>Password</label>
-      						<input type="password" name="password" class="form-control" placeholder="password" minlength="6" required>
+      						<input type="password" name="password1" class="form-control" placeholder="password" minlength="6" maxlength="30" required>
+							<label>Retype Password</label>
+							<input type="password" name="password2" class="form-control" placeholder="password" minlength="6" maxlength="30" required>
       					</div>
     						<input type="hidden" name="referrer" class="form-control">
       					<!-- <div class="form-group">

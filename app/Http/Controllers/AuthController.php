@@ -65,11 +65,51 @@ class AuthController extends Controller {
 			$lastname = $request->input('lastname');
 			$email = $request->input('email');
 			$username = $request->input('email');
-			$password = $request->input('password');
-
+			$password = $request->input('password1');
+			$password2 = $request->input('password2');
 			try {
 				$user = User::where('email', '=', $email)->first();
-				if ($user) {
+				if (!preg_match("#^[aA-zZ]+$#",$firstname )|| !preg_match("#^[aA-zZ]+$#",$lastname) ) {
+					return [
+						'success' => '0',
+						'results' => '',
+						'messages' => 'Name must contain characters only.',
+						'redirect' => ''
+					];
+				}
+				elseif (strlen($firstname)<2 || strlen($lastname)<2) {
+					return [
+						'success' => '0',
+						'results' => '',
+						'messages' => 'Length of first or last name must be at least 2 characters.',
+						'redirect' => ''
+					];
+				}
+				elseif (strlen($firstname)>=50 || strlen($lastname)>=50) {
+					return [
+						'success' => '0',
+						'results' => '',
+						'messages' => 'Length of first or last name must be less than 50 characters.',
+						'redirect' => ''
+					];
+				}
+				elseif (!preg_match("#.+@.+$#",$email)) {
+					return [
+						'success' => '0',
+						'results' => '',
+						'messages' => 'Incorrect  email.',
+						'redirect' => ''
+					];
+				}
+				elseif ($password<>$password2) {
+					return [
+						'success' => '0',
+						'results' => '',
+						'messages' => 'Passwords do not match.',
+						'redirect' => ''
+					];
+				}
+				elseif ($user) {
 					return [
 						'success' => '0',
 						'results' => '',
@@ -105,7 +145,8 @@ class AuthController extends Controller {
 
 			$role = Role::where('name', '=', 'donator')->first();
 			$user->attachRole($role);
-
+			
+			
 			if (Auth::attempt(['username' => $email, 'password' => $password])) {
 				return [
 					'success' => '1',
