@@ -11,10 +11,15 @@
 	<!-- <link href="/lib/Skeleton-2.0.4/css/normalize.css" rel="stylesheet">
 	<link href="/lib/Skeleton-2.0.4/css/skeleton.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<link href="{{ asset('lib/bootstrap-3.3.5-dist/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('lib/slick/slick.css') }}" rel="stylesheet">
 	<link href="{{ asset('lib/bootstrap-combobox-master/css/bootstrap-combobox.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 	@yield('css_master')
 
 	<!--[if lt IE 9]>
@@ -30,13 +35,18 @@
 	<!-- Scripts -->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 	<!-- <script src="https://checkout.stripe.com/checkout.js"></script> -->
-	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-	<script src="{{ asset('/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('/lib/parsley/parsley.min.js') }}"></script>
-	<script src="{{ asset('/lib/slick/slick.min.js') }}"></script>
+	{{--<script src="{{ asset('/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>--}}
 	<script src="{{ asset('/lib/bootstrap-combobox-master/js/bootstrap-combobox.js') }}"></script>
-	<script src="{{ asset('/js/app.js') }}?v=1.1"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+    <script src="{{ asset('/lib/swiper.min.js') }}"></script>
+    <script src="{{ asset('/lib/slideout.min.js') }}"></script>
+	<script src="{{ asset('/lib/parsley/parsley.min.js') }}"></script>
+	<script src="{{ asset('/js/app.js') }}"></script>
+
 	@yield('js_master')
 
 </body>

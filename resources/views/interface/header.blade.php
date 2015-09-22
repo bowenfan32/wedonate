@@ -1,7 +1,8 @@
+
 <!-- <nav class="navbar menu-primary">
   <div class="container full-size">
     <div class="col-sm-3">
-      <a href="{{ route('getDonate') }}">
+      {{--<a href="{{ route('getDonate') }}">--}}
         <div class="rect">
           <p>Donate</p>
         </div>
@@ -15,14 +16,14 @@
       </a>
     </div> -->
     <!-- <div class="col-sm-3">
-      <a href="{{ route('getSponsors') }}">
+      {{--<a href="{{ route('getSponsors') }}">--}}
         <div class="rect">
           <p>Sponsors</p>
         </div>
       </a>
     </div> -->
     <!-- <div class="col-sm-3">
-      <a href="{{ route('getVolunteer') }}">
+      {{--<a href="{{ route('getVolunteer') }}">--}}
         <div class="rect">
           <p>Volunteer</p>
         </div>
@@ -30,3 +31,9 @@
     </div>
   </div> 
 </nav> -->
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="volunteer">Volunteer</a></li>
+    <li><a href="about">About</a></li>
+</ul>
