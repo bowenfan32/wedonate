@@ -27,7 +27,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/wedonate/wedonate/public',
+    'url' => 'http://localhost:8888/wedonate_new/public/',
     // 'url' => 'http://wedonate.org',
 
     /*

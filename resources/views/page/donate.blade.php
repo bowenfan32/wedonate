@@ -20,6 +20,31 @@
 		</div>
 	</div>
 </section>
+<section class="carousel-cause">
+
+    <h1>Choose a cause</h1>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" >
+                <div id="cause1" class="image" style="background-image:url(http://placehold.it/500x300)"></div>
+                <p class="caption">Our focus cause this month</p>
+            </div>
+            <div class="swiper-slide" >
+                <div id="cause2" class="image" style="background-image:url(http://placehold.it/500x300)" ></div>
+                <p class="caption">...</p>
+            </div>
+            <div class="swiper-slide" >
+                <div id="cause3" class="image" style="background-image:url(http://placehold.it/500x300)" ></div>
+                <p class="caption">...</p>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</section>
 
 <section class="bg bg-blue donate-ripple c-fff" style="padding: 120px 50px;">
 	<div class="container full-size">

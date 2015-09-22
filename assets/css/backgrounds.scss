@@ -10,8 +10,6 @@
 
 	&.bg-white-world {
 
-		background-image: url('../img/bg/bg_white_01.jpg');
-
 	}
 
 	&.bg-black {
@@ -19,15 +17,11 @@
 	}
 
 	&.bg-blue {
-		background: #4bc8f4;
+		background:rgba(75, 200, 244, 0.5);
 	}
 
 	&.bg-ripple {
 		background: #4bc8f4;
-	}
-
-	&.bg-map {
-		background-image: url('../img/bg/bg_map.png');
 	}
 
 	&.bg-white-pattern {

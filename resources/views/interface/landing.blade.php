@@ -1,6 +1,7 @@
-<section id="landing-section" class="bg bg-white-world" style="padding: 150px 50px 200px;">
+<section id="landing-section" class="bg bg-white-world" >
 	<div class="container">
 		<div class="row">
+
 			<div class="col-sm-12">
 				<h1 class="ta-center">
 					<img src="{{ asset('img/logo/stand_logo.png') }}" >

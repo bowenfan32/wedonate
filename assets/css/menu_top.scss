@@ -1,20 +1,57 @@
-.menu-top {
-	position: fixed;
-	top: 1em;
-	right: 0;
-	width: 100%;
+.nav-bar {
+  position: fixed;
+  right:0;
+  margin-right: 20px;
+  z-index:998;
 
-	ul {
-		float: right;
-		li {
-			display: inline-block;
-			margin-left: 1em;
-			a {
-				color: $primary-black;
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-	}
+  i {
+    font-size: 25px;
+    padding: 10px 30px 10px 20px;
+    color: $primary-color;
+    position: relative;
+    cursor:pointer;
+
+    span {
+      display:none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      right:0;
+      font-size: 14px;
+      padding:10px;
+      width:100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &:hover {
+
+      span {
+        display: block;
+
+        &:after {
+          content: "";
+          display: block; /* reduce the damage in FF3.0 */
+          position: absolute;
+          top: -8px;
+          left: 25px;
+          width: 0;
+          border-width: 0 8px 8px ;
+          border-style: solid;
+          border-color: rgba(0, 0, 0, 0.6) transparent;
+        }
+
+      }
+    }
+
+  }
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+
+  i {
+    display: inline-block;
+  }
+
 }
