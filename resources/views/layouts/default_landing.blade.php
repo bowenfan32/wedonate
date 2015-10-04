@@ -14,30 +14,38 @@
     @include('interface.header')
 </div>
 
+<div class="nav-bar" >
+    <i class="fa fa-sign-in">
+        <span>Sign In</span>
+    </i>
+    <i class="fa fa-share-alt">
+        <span>Share</span>
+    </i>
+    <i class="toggle-button fa fa-bars">
+        <span>Menu</span>
+    </i>
+
+</div>
+
 <main id="panel">
-
-    <div class="nav-bar" >
-        <i class="fa fa-sign-in">
-            <span>Sign In</span>
-        </i>
-        <i class="fa fa-share-alt">
-            <span>Share</span>
-        </i>
-        <i class="toggle-button fa fa-bars">
-            <span>Menu</span>
-        </i>
-
-    </div>
 
     <header  class="site-header">
         @include('interface.landing')
     </header>
 
+    <section id="about">
+        @include('page.about')
+    </section>
+
     <div class="site-content">
         @yield('content')
     </div>
 
-    <footer class="site-footer">
+    <section id="volunteer">
+        @include('page.volunteer')
+    </section>
+
+    <footer id="footer" class="site-footer">
         @include('interface.footer')
     </footer>
 

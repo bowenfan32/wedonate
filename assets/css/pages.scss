@@ -2,5 +2,32 @@
 	background-image: url('../img/sponsors/greywing_bg.jpg');
 	background-size: cover;
 	background-position: center;
+}
 
+
+#about {
+  height:auto;
+  position: relative;
+
+  .container {
+    height:100%;
+    padding:100px 0;
+  }
+
+  .col-sm-4 {
+    position: relative;
+
+    .content {
+      padding:0 10px;
+      background-color: rgba(51,195,240, 0.7) ;
+      text-align: center;
+      height:250px;
+
+      h1, p {
+        padding: 10px;
+        margin:0;
+      }
+    }
+
+  }
 }

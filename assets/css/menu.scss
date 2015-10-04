@@ -1,10 +1,17 @@
+.menu {
+  position:relative;
+  top:50px;
+  height: 100%;
+  display: none;
+}
+
 .slideout-menu {
   position: fixed;
   background-color: $primary-black;
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: 9998;
   width: 256px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -33,16 +40,51 @@
 
   }
 
+  .feedback {
+    margin:10px 0;
+    padding:10px;
+    background-color: lightgrey;
+  }
+
+  h2 {
+    color: $primary-color;
+    margin:0;
+  }
+
+  p {
+    color:white;
+  }
+
+  textarea {
+    width:100%;
+    height:300px;
+    border:1px solid $primary-color;
+  }
+
+  button {
+    background-color: $primary-color;
+    border:none;
+    width:100%;
+    color:black;
+  }
+
 }
-
-
 
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-  overflow: hidden;
+  overflow: visible;
+
+  .menu {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .slideout-open .slideout-menu {
   display: block;
+  overflow: visible;
+  overflow-x: hidden;
 }
+
+
