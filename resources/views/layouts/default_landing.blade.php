@@ -15,8 +15,12 @@
 </div>
 
 <div class="nav-bar" >
+
     <i class="fa fa-sign-in">
-        <span>Sign In</span>
+        <span>Connect</span>
+    </i>
+    <i class="fa fa-usd">
+        <span>Donate</span>
     </i>
     <i class="fa fa-share-alt">
         <span>Share</span>
@@ -51,23 +55,22 @@
 
 </main>
 
-    <div class="overlay">
+<div class="overlay">
 
-        <div class="content">
-            <h1>Share</h1>
+    <div class="content">
+        <h1>Share</h1>
 
-            <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
-            </div>
-
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google-plus"></i>
         </div>
-
-        <i class="fa fa-times"></i>
 
     </div>
 
+    <i class="fa fa-times"></i>
+
+</div>
 
 
 @stop

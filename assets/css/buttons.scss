@@ -1,7 +1,6 @@
 .btn {
 	height: auto;
-	line-height: 2em;
-  padding: 0 30px;
+    padding: 0 30px;
 	font-size: 1em;
 	line-height: 38px;
 	letter-spacing: .1rem;
@@ -27,4 +26,20 @@
 .btn-secondary:hover {
 	background-color: #4bc8f4;
   border-color: #4bc8f4;
+}
+
+.typeform-share {
+  margin:20px;
+  border: 1px solid #fff;
+  padding: 24px 40px;
+  display: inline-block;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #4bc8f4;
+    color:white;
+    text-decoration: none;
+  }
 }

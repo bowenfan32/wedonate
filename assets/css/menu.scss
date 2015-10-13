@@ -16,6 +16,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
+  border-left: 5px solid $primary-color;
 
   ul {
     padding: 0;
