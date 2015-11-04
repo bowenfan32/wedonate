@@ -16,12 +16,20 @@
 
 <div class="nav-bar" >
 
-    <i class="fa fa-sign-in">
+    <i data-toggle="modal" data-target="#global-connect-popup" class="fa fa-sign-in">
         <span>Connect</span>
     </i>
-    <i class="fa fa-usd">
-        <span>Donate</span>
-    </i>
+
+    @if (Auth::check())
+        <i data-toggle="modal" data-target="#global-donate-popup" class="fa fa-usd">
+            <span>Donate</span>
+        </i>
+    @else
+        <i data-toggle="modal" data-target="#global-connect-popup" class="fa fa-usd">
+            <span>Donate</span>
+        </i>
+    @endif
+
     <i class="fa fa-share-alt">
         <span>Share</span>
     </i>
@@ -49,11 +57,11 @@
         @include('page.volunteer')
     </section>
 
-    <footer id="footer" class="site-footer">
-        @include('interface.footer')
-    </footer>
-
 </main>
+
+<footer id="footer" class="site-footer">
+    @include('interface.footer')
+</footer>
 
 <div class="overlay">
 
