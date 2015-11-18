@@ -17,7 +17,7 @@ function stripeResponseHandler(status, response) {
     // Show the errors on the form
     $form.find('.payment-errors').text(response.error.message);
     $form.find('button').prop('disabled', false);
-		// $button.after('<div class="spinner d-none mt-1""><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
+		$button.after('<div class="spinner d-none mt-1""><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
 		$form.find('.spinner').fadeIn('fast');
 
   } else {
@@ -56,22 +56,18 @@ function getUrlParameter(sParam) {
 }
 
 $(document).ready(function() {
-
-	window.setTimeout(function () {
-		var r = getUrlParameter('r');
-		if (window.location.href == SITEURL) {
-			$('#global-connect-popup #registerForm input[name=referrer]').val(r);
-		}
-	}, 1);
-
+    window.setTimeout(function () {
+        var r = getUrlParameter('r');
+        if (window.location.href == SITEURL) {
+            $('#global-connect-popup #registerForm input[name=referrer]').val(r);
+        }
+    }, 1);
 	// Global Connect
 	$(document).on('submit', '#global-connect-popup #loginForm', function(e) {
 		e.preventDefault();
-
 		$form = $(this);
 		$button = $(this).find('button');
 		$data = $(this).serialize();
-
 		$button.attr('disabled', 'disabled');
 		$button.after('<div class="spinner d-none mt-1""><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
 		$form.find('.spinner').fadeIn('fast');
@@ -151,18 +147,13 @@ $(document).ready(function() {
 			}
      });
 	});
-
 	// Global Donate
-
-	// Stripe.setPublishableKey('pk_test_4Mw3HArEb1pwu6VjJFRYJx4v');
-	Stripe.setPublishableKey('pk_live_4Mw3QcIDxE5B8cxqhCAAWTY7');
-
+	Stripe.setPublishableKey('pk_test_4Mw3HArEb1pwu6VjJFRYJx4v');
+	//Stripe.setPublishableKey('pk_live_4Mw3QcIDxE5B8cxqhCAAWTY7');
 	$(document).on('submit', '#global-donate-popup form', function(e) {
     var $form = $(this);
-
     // Disable the submit button to prevent repeated clicks
     $form.find('button').prop('disabled', true);
-
     Stripe.card.createToken($form, stripeResponseHandler);
 
     // Prevent the form from submitting with the default action
@@ -171,8 +162,8 @@ $(document).ready(function() {
 
 	// Form Vaidates
 
+	
 	$(document).on('input', '#global-donate-popup form input',function() {
-
 		var $input = $(this);
 
 		if ($input.attr('data-stripe') == 'number') {
@@ -204,23 +195,22 @@ $(document).ready(function() {
 			}
 		}
 	});
-
 	// Close Checkout on page navigation
 	$(window).on('popstate', function() {
 		handler.close();
 	});
-
+	
+	
 	if ($('.action').html() == '') {
-
 		$action = $('.action');
 		$action.fadeIn('slow');
-
 	}
 
 	function fix_navbar_top() {
 		var styles = {'position': 'fixed', 'top': '0', 'bottom': 'auto', 'margin-top': 'auto', 'width': '100%'};
 		$('.landing-navbar').css(styles);
 	}
+	
 	function reset_navbar() {
 		var styles = {'position': 'relative', 'margin-top': '-90px'};
 		$('.landing-navbar').css(styles);
@@ -332,7 +322,6 @@ $(document).ready(function() {
 	function init_interval( $e, words ) {
 		setInterval(function() {
 			if ( $e.hasClass('paused') ) return;
-
 			var word;
 			var url = '';
 
@@ -365,11 +354,8 @@ $(document).ready(function() {
 	// Calculate the donate
 
 	$('.donate-ripple .choose input').on('input paste copy cut keyup keydown', function(event) {
-
-		var current = $(this);
-
 		if (event.keyCode >= 48 && event.keyCode <= 57 && current.val() >= 7) {
-			$('.donate-ripple .choose .label').css('display', 'none');
+			
 
 			// $('.amount-error').html('');
 			// $('.amount-error').removeClass('alert alert-danger');
@@ -379,7 +365,6 @@ $(document).ready(function() {
 			var uDonate = 28.571428571428573 * my_amount / 100;
 			var weDonate = 42.857142857142854 * my_amount / 100;
 			var retain = 14.28 * my_amount / 100;
-
 			$('.donate-ripple .ripple .keep input').val('$' + parseFloat(iDonate).toFixed(1));
 			$('.donate-ripple .ripple .iDonate input').val('$' + parseFloat(iDonate).toFixed(1));
 			$('.donate-ripple .ripple .uDonate input').val('$' + parseFloat(uDonate).toFixed(1));
@@ -387,28 +372,67 @@ $(document).ready(function() {
 
 			$('.donate-form input[name=amount]').val(my_amount);
 		}
+		// if amoutn less than 7
 		else {
-			$('.donate-ripple .choose .label').css('display', 'inline');
+        // $('.amount-error').addClass('alert alert-danger');
+        // $('.amount-error').html('Please enter an amount greater than $7.');
 		}
-
 	});
 
-	// Slick teh donatin choose a cause area
+});
 
-	$('.choose-a-cause .slick').slick({
-		autoplay: 'true',
-		arrows: 'false',
-		nav: 'false'
-	});
+//Navigation//
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'side': 'right'
+});
 
-	// Activate combobox
-	$('.choose-a-cause select').combobox();
-	// Detect the change
-	$('.choose-a-cause .select-container .combobox-container input[type=hidden]').change(function() {
-		var value = $(this).val();
-		var name = $('#choose-a-cause').find('option[value=' + value + ']');
-		$('.donate.popup form input[name=cause]').val(value);
-		$('.donate.popup form input[name=cause_name]').val(name.attr('data-name'));
-	});
+//Nav toggles//
+$('.toggle-button').on('click', function() {
+    slideout.toggle();
+    $('.toggle-button').toggleClass('fa-bars');
+    $('.toggle-button').toggleClass('fa-times');
+});
+$('.fa-share-alt').on('click', function() {
+    $('.overlay').addClass('show');
+});
+$('.fa-times').on('click', function() {
+    $('.overlay').removeClass('show');
+});
+
+function navigate(id) {
+
+    $('html, body').animate({
+        scrollTop: $('#'+id).offset().top
+    }, 2000);
+
+}
+
+
+
+//Carousel//
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    coverflow: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true
+    }
+});
+$(".carousel-cause .image").click(function(){
+
+    $(".carousel-cause .image").removeClass('selected');
+    $("#"+this.id).addClass('selected');
 
 });
