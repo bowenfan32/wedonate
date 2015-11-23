@@ -14,52 +14,71 @@
     @include('interface.header')
 </div>
 
+<div class="nav-bar" >
+
+    <i data-toggle="modal" data-target="#global-connect-popup" class="fa fa-sign-in">
+        <span>Connect</span>
+    </i>
+
+    @if (Auth::check())
+        <i data-toggle="modal" data-target="#global-donate-popup" class="fa fa-usd">
+            <span>Donate</span>
+        </i>
+    {{-- @else
+        <i data-toggle="modal" data-target="#global-connect-popup" class="fa fa-usd">
+            <span>Donate</span>
+        </i> --}}
+    @endif
+
+    <i class="fa fa-share-alt">
+        <span>Share</span>
+    </i>
+    <i class="toggle-button fa fa-bars">
+        <span>Menu</span>
+    </i>
+
+</div>
+
 <main id="panel">
-
-    <div class="nav-bar" >
-        <i class="fa fa-sign-in">
-            <span>Sign In</span>
-        </i>
-        <i class="fa fa-share-alt">
-            <span>Share</span>
-        </i>
-        <i class="toggle-button fa fa-bars">
-            <span>Menu</span>
-        </i>
-
-    </div>
 
     <header  class="site-header">
         @include('interface.landing')
     </header>
 
+    {{-- <section id="about">
+        @include('page.about')
+    </section> --}}
+
     <div class="site-content">
         @yield('content')
     </div>
 
-    <footer class="site-footer">
-        @include('interface.footer')
-    </footer>
+    {{-- <section id="volunteer">
+        @include('page.volunteer')
+    </section> --}}
 
 </main>
 
-    <div class="overlay">
+<footer id="footer" class="site-footer">
+    @include('interface.footer')
+</footer>
 
-        <div class="content">
-            <h1>Share</h1>
+<div class="overlay">
 
-            <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
-            </div>
+    <div class="content">
+        <h1>Share</h1>
 
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google-plus"></i>
         </div>
-
-        <i class="fa fa-times"></i>
 
     </div>
 
+    <i class="fa fa-times"></i>
+
+</div>
 
 
 @stop

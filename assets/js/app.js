@@ -1,6 +1,6 @@
 // GlOBALS
-// const SITEURL = 'http://localhost:8000';
-const SITEURL = 'http://wedonate.org';
+const SITEURL = 'http://localhost:8000';
+//const SITEURL = 'http://wedonate.org';
 
 // Redirect after X amount of seconds
 function countdown_redirect(url) {
