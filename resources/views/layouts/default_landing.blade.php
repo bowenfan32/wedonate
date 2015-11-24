@@ -11,22 +11,21 @@
 @include('interface.nav.top')
 
 <div id="menu">
-    @include('interface.header')
+    @include('interface.header_bak1')
 </div>
-
 <main id="panel">
-
     <div class="nav-bar" >
-        <i class="fa fa-sign-in">
-            <span>Sign In</span>
+        <i class="fa fa-sign-in" data-toggle="modal" data-target="#global-connect-popup">
+            <span>Connect</span>
         </i>
+
         <i class="fa fa-share-alt">
             <span>Share</span>
         </i>
+
         <i class="toggle-button fa fa-bars">
             <span>Menu</span>
         </i>
-
     </div>
 
     <header  class="site-header">
@@ -36,30 +35,26 @@
     <div class="site-content">
         @yield('content')
     </div>
-
-    <footer class="site-footer">
-        @include('interface.footer')
-    </footer>
-
 </main>
+<footer id="footer" class="site-footer">
+    @include('interface.footer')
+</footer>
 
-    <div class="overlay">
 
-        <div class="content">
-            <h1>Share</h1>
 
-            <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
-            </div>
-
+<div class="overlay">
+    <div class="content">
+        <h1>Share</h1>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google-plus"></i>
         </div>
-
-        <i class="fa fa-times"></i>
-
     </div>
 
+    <i class="fa fa-times"></i>
+
+</div>
 
 
 @stop
@@ -67,5 +62,4 @@
 @section('js_master')
 
 @yield('js')
-
 @stop
