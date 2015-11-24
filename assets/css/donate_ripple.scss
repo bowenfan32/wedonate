@@ -1,0 +1,67 @@
+.choose-a-cause {
+	.select-container {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
+.donate-ripple {
+	.container {
+		width: 970px !important;
+	}
+	.ripple {
+		position: relative;
+		.values {
+			position: absolute;
+			input {
+				background: none;
+				border: none;
+				text-align: right;
+				width: 3em;
+				outline: none;
+				font-size: 50px;
+				font-weight: 700;
+			}
+
+			&.keep {
+				left: 162px;
+				bottom: 28px;
+			}
+
+			&.iDonate {
+				bottom: 145px;
+				left: 444px;
+			}
+
+			&.uDonate {
+				top: 104px;
+				left: 25px;
+			}
+
+			&.weDonate {
+				top: 44px;
+    		right: 256px;
+			}
+		}
+
+		.btn {
+			position: absolute;
+			bottom: 35px;
+			right: 100px;
+		}
+	}
+	.choose {
+		h1 {
+			input {
+				&:focus {
+					outline: none;
+				}
+				background: none;
+				border: none;
+				border-bottom: 1px solid;
+				width: 2em;
+				text-align: center;
+			}
+		}
+	}
+}
