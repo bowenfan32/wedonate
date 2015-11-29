@@ -1,0 +1,61 @@
+.donate-ripple {
+	.fixed-size {
+		width: 970px;
+	}
+	.ripple {
+		position: relative;
+		.values {
+			position: absolute;
+			input {
+				background: none;
+				border: none;
+				text-align: right;
+				width: 3em;
+				outline: none;
+				font-size: 50px;
+				font-weight: 700;
+			}
+
+			&.keep {
+				left: 324px;
+				bottom: 28px;
+			}
+
+			&.iDonate {
+				bottom: 145px;
+				left: 596px;
+			}
+
+			&.uDonate {
+				top: 105px;
+				left: 180px;
+			}
+
+			&.weDonate {
+				top: 44px;
+				right: 406px;
+			}
+		}
+
+		.btn {
+			position: absolute;
+			bottom: 35px;
+			right: 100px;
+		}
+	}
+	.choose {
+		h1 {
+		  padding-left: 3em;
+			input {
+				&:focus {
+					outline: none;
+				}
+				background: none;
+				border: none;
+				border-bottom: 1px solid;
+				width: 2em;
+				text-align: center;
+			}
+		}
+	}
+}

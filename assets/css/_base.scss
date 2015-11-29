@@ -1,0 +1,73 @@
+body {
+	font-size: 18px;
+	font-family: 'champagne_limo', sans-serif;
+	font-weight: 400;
+  background-image: url("../img/bg/bg_white_01.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  width:100%;
+}
+
+main {
+  background-size: cover;
+  width:100%;
+}
+
+.overlay {
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 10%;
+  z-index: 999;
+  display: none;
+
+  .content {
+    z-index: 1000;
+    width: 50%;
+    display: block;
+    margin:0 auto;
+    top:20%;
+    position: relative;
+    text-align: center;
+    color:white;
+
+    i {
+      margin-top:20px;
+      color: white;
+      font-size: 50px;
+      background-color: $primary-color;
+      width: 80px;
+      height: 80px;
+      padding:15px 0;
+      cursor:pointer;
+
+      &:hover {
+        background-color: #1DBBFF;
+      }
+
+    }
+
+  }
+
+  .fa-times {
+    color:white;
+    z-index: 1000;
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  &.show {
+    display:block;
+  }
+}
+

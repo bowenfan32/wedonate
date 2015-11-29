@@ -1,0 +1,19 @@
+.modal-dialog {
+	position: absolute;
+	top: 45% !important;
+	transform: translate(-50%, -50%) !important;
+	left: 50%;
+    z-index: 9999;
+}
+
+button.close {
+	position: absolute;
+	right: -38px;
+  top: -55px;
+  font-size: 60px;
+	color: #4bc8f4;
+
+	&:hover {
+		color: #4bc8f4;
+	}
+}

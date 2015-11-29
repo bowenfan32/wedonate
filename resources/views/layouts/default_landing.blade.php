@@ -12,14 +12,23 @@
 
 <div id="menu">
     @include('interface.header_bak1')
+    @if (Auth::check())
+        <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
+    @endif
 </div>
 <main id="panel">
     <div class="nav-bar" >
-        <i class="fa fa-sign-in" data-toggle="modal" data-target="#global-connect-popup">
-            <span>Connect</span>
-        </i>
+        @if (Auth::check())
+            <a href="{{ route('getLogout') }}" ><i class="fa fa-sign-in">
+                <span>Sign Out</span>
+            </i></a>
+        @else
+            <i class="fa fa-sign-in" data-toggle="modal" data-target="#global-connect-popup">
+                <span>Connect</span>
+            </i>
+        @endif
 
-        <i class="fa fa-share-alt">
+        <i class="fa fa-share" data-toggle="modal" data-target="#global-share-popup">
             <span>Share</span>
         </i>
 
