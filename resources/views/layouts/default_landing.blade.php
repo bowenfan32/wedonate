@@ -12,10 +12,10 @@
 
 <div id="menu">
     @include('interface.header_bak1')
-    @if (Auth::check())
-        <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
-    @endif
 </div>
+@if (Auth::check())
+    <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
+@endif
 <main id="panel">
     <div class="nav-bar" >
         @if (Auth::check())
