@@ -46,6 +46,31 @@ class UserTableSeeder extends Seeder {
 
     public function run() {
 
+      //UserID/Email: admin@wedonate.org & password: admin
+        $user1 = new User;
+        $user1->email = 'admin@wedonate.org';
+        $user1->username = 'admin@wedonate.org';
+        $user1->registered_provider = 'email';
+        $user1->password = Hash::make('admin');
+        $user1->uuid = Uuid::generate(4);
+        $user1->registered_ip = '127.0.0.1';
+        $user1->last_login_ip = null;
+        $user1->last_login_datetime = date('Y-m-d H:i:s');
+        $user1->referrer_code = Uuid::generate(1, '0123456');
+        $user1->save();
+
+        $profile1 = new UserProfile;
+        $profile1->user_id = $user1->id;
+        $profile1->display_name = 'Admin';
+        $profile1->firstname = 'Admin';
+        $profile1->lastname = 'WeDonate';
+        $profile1->ranking = 0;
+        $profile1->save();
+
+
+
+
+
       $user = new User;
       $user->email = 'j@wedonate.org';
       $user->username = 'j@wedonate.org';
@@ -65,6 +90,12 @@ class UserTableSeeder extends Seeder {
 			$profile->lastname = '';
 			$profile->ranking = 1;
 			$profile->save();
+      $role = new Role();
+        $role->name = 'developer';
+        $role->display_name = 'Developer';
+        $role->description = 'Developer priveleges. Everything activated.';
+        $role->save();
+
 
       $user2 = new User;
       $user2->email = 'ntuanb@gmail.com';
@@ -78,19 +109,13 @@ class UserTableSeeder extends Seeder {
 			$user2->referrer_code = Uuid::generate(1, '0123456');
       $user2->save();
 
-      $profile = new UserProfile;
-			$profile->user_id = $user2->id;
-			$profile->display_name = 'Tuan Bui';
-			$profile->firstname = 'Tuan';
-			$profile->lastname = 'Bui';
-			$profile->ranking = 0;
-			$profile->save();
-
-      $role = new Role();
-      $role->name = 'developer';
-      $role->display_name = 'Developer';
-      $role->description = 'Developer priveleges. Everything activated.';
-      $role->save();
+      $profile2 = new UserProfile;
+			$profile2->user_id = $user2->id;
+			$profile2->display_name = 'Tuan Bui';
+			$profile2->firstname = 'Tuan';
+			$profile2->lastname = 'Bui';
+			$profile2->ranking = 0;
+			$profile2->save();
 
       $role2 = new Role();
       $role2->name = 'donator';
@@ -98,19 +123,27 @@ class UserTableSeeder extends Seeder {
       $role2->description = 'Donator.';
       $role2->save();
 
+      $user1 = User::where('email', '=', 'admin@wedonate.org')->first();
+      $user1->attachRole($role);
+      $user2 = User::where('email', '=', 'ntuanb@gmail.com')->first();
+      $user2->attachRole($role);
       $user = User::where('email', '=', 'j@wedonate.org')->first();
       $user->attachRole($role2);
 
-      $user = User::where('email', '=', 'ntuanb@gmail.com')->first();
-      $user->attachRole($role);
+      $permission_admin = new Permission();
+      $permission_admin->name = 'developer';
+      $permission_admin->display_name = 'Developer';
+      $permission_admin->description = 'Developer priveleges. Everything activated.';
+      $permission_admin->save();
 
-      $permission = new Permission();
-      $permission->name = 'developer';
-      $permission->display_name = 'Developer';
-      $permission->description = 'Developer priveleges. Everything activated.';
-      $permission->save();
+      $permission_donator = new Permission();
+      $permission_donator->name = 'donator';
+      $permission_donator->display_name = 'Donator';
+      $permission_donator->description = 'Donator priveleges. Limit activated.';
+      $permission_donator->save();
 
-      $role->attachPermission($permission);
+      $role->attachPermission($permission_admin);
+      $role2->attachPermission($permission_donator);
     }
 
 }
