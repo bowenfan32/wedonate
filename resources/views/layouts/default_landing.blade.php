@@ -13,9 +13,6 @@
 <div id="menu">
     @include('interface.header_bak1')
 </div>
-@if (Auth::check())
-    <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
-@endif
 <main id="panel">
     <div class="nav-bar" >
         @if (Auth::check())
@@ -36,11 +33,12 @@
             <span>Menu</span>
         </i>
     </div>
-
+    @if (Auth::check())
+        <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
+    @endif
     <header  class="site-header">
         @include('interface.landing')
     </header>
-
     <div class="site-content">
         @yield('content')
     </div>
