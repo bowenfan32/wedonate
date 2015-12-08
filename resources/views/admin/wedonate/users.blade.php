@@ -18,7 +18,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="mb-2">
 	<div class="container">
@@ -34,6 +34,9 @@
 
 <section>
 	<div class="container full-size">
+        @if (Session::has('flash_message'))
+        <h3 style="color:#ff0000;">{{ Session::get('flash_message') }}</h3>
+        @endif
 		<div class="row">
 			<div class="col-sm-12">
 
@@ -68,7 +71,10 @@
 							<td>{{ $user->profile->weDonate }}</td>
 							<td>{{ $user->profile->amount }}</td>
 							<td>{{ $user->profile->referrer_amount_forward }}</td>
-							<td><a href="{{ route('getUser', $user->uuid) }}"><i class="fa fa-pencil"></i></a> <i class="fa fa-trash"></i></td>
+							<td>
+                                <a href="{{ route('getUserEdit', $user->uuid) }}"><i class="fa fa-pencil"></i></a>
+                                <a href="{{ route('getUserRemove', $user->uuid) }}"><i class="fa fa-trash"></i></a>
+                            </td>
 						</tr>
 
 					@endforeach

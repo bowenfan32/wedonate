@@ -1,11 +1,4 @@
-<div class="global-popups">
 
-	@include('interface.popups.connect')
-	@include('interface.popups.donate')
-	@include('interface.popups.share')
-	@include('interface.popups.action')
-
-</div>
 
 <footer class="footer">
 	<div class="container">

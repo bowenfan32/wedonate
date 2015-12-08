@@ -13,7 +13,7 @@
 <div id="menu">
     @include('interface.header_bak1')
 </div>
-<main id="panel">
+
     <div class="nav-bar" >
         @if (Auth::check())
             <a href="{{ route('getLogout') }}" ><i class="fa fa-sign-in">
@@ -33,8 +33,10 @@
             <span>Menu</span>
         </i>
     </div>
+
+<main id="panel">
     @if (Auth::check())
-        <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
+    <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
     @endif
     <header  class="site-header">
         @include('interface.landing')
@@ -42,10 +44,17 @@
     <div class="site-content">
         @yield('content')
     </div>
+    <footer id="footer" class="site-footer">
+        @include('interface.footer')
+    </footer>
 </main>
-<footer id="footer" class="site-footer">
-    @include('interface.footer')
-</footer>
+<div class="global-popups">
+    @include('interface.popups.connect')
+    @include('interface.popups.donate')
+    @include('interface.popups.share')
+    @include('interface.popups.action')
+</div>
+
 
 
 

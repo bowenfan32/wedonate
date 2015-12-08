@@ -169,7 +169,7 @@ class AdminWedonateController extends Controller {
 		return redirect(route('getCauses'));
 
 	}
-
+    //USERs
 	public function getUsers(Request $request) {
 
 		$users = User::all();
@@ -179,12 +179,14 @@ class AdminWedonateController extends Controller {
 
 	}
 
-	public function getUser(Request $request, $uuid) {
+	public function getUserEdit(Request $request, $uuid) {
 
 		$user = User::where('uuid', '=', $uuid)->first();
+        $profile = UserProfile::where('user_id','=',$user->id)->first();
 
 		return view('admin.wedonate.user')
-			->with('user', $user);
+			->with('user', $user)
+            ->with('profile',$profile);
 
 	}
 
@@ -200,48 +202,126 @@ class AdminWedonateController extends Controller {
 
 	public function postUserCreate(Request $request) {
 
-		// TODO: create a globa function to create a user
+        // try {
 
-		$firstname = $request->input('firstname');
-		$lastname = $request->input('lastname');
-		$email = $request->input('email');
-		$username = $request->input('email');
-		$password = $request->input('password');
+        $firstname = $request->input('firstname');
+        $lastname = $request->input('lastname');
+        $email = $request->input('email');
+        $username = $request->input('email');
+        $password = $request->input('password');
 
-		$user = new User;
-		$user->uuid = Uuid::generate(4);
-		$user->registered_ip = $_SERVER['REMOTE_ADDR'];
-		$user->registered_provider = 'email';
-		$user->last_login_ip = null;
-		$user->last_login_datetime = date('Y-m-d H:i:s');
-		$user->email = $email;
-		$user->username = $email;
-		$user->password = Hash::make($password);
-		$user->referrer_code = Uuid::generate(1, '0123456');
-		$user->save();
+        try {
+            $user = User::where('email', '=', $email)->first();
+            if ($user) {
+                return [
+                    'success' => '0',
+                    'results' => '',
+                    'messages' => 'The account already exists in weDonate.',
+                    'redirect' => ''
+                ];
+            }
+        } catch (Exception $e) {}
 
-		$profile = new UserProfile;
-		$profile->user_id = $user->id;
-		$profile->firstname = $firstname;
-		$profile->lastname = $lastname;
-		if ($request->has('referrer_code')) {
-			$referrer = User::where('referrer_code', '=', $request->has('referrer_code'))->first();
-			$profile->referrer_id = $referrer->id;
-		}
-		else {
-			$profile->referrer_id = 1;
-		}
-		$profile->ranking = (int)(User::all()->count());
-		$profile->save();
+        // TODO: create a globa function to create a user
 
-		$role = Role::where('id', '=', $request->input('role'))->first();
+        $user = new User;
+        $user->uuid = Uuid::generate(4);
+        $user->registered_ip = $_SERVER['REMOTE_ADDR'];
+        $user->registered_provider = 'email';
+        $user->last_login_ip = null;
+        $user->last_login_datetime = date('Y-m-d H:i:s');
+        $user->email = $email;
+        $user->username = $email;
+        $user->password = Hash::make($password);
+        $user->referrer_code = Uuid::generate(1, '0123456');
+        $user->save();
+
+        $profile = new UserProfile;
+        $profile->user_id = $user->id;
+        $profile->firstname = $firstname;
+        $profile->lastname = $lastname;
+        if ($request->has('referrer')) {
+            $profile->referrer_id = User::where('referrer_code', '=', $request->has('referrer_code'))->first();
+        }
+        $profile->ranking = (int)(User::all()->count());
+        $profile->save();
+
+
+        $role = Role::where('id', '=', $request->input('role'))->first();
 		$user->attachRole($role);
 
+        //send email
+        $message = $this -> sendEmail($email,$user->id);
+
 		return redirect(route('getUserCreate'))
-			->with('messages', 'User created.');
+			->withFlashMessage($message);
 
 	}
 
+    public function sendEmail($email,$user_id){
+        //send email to validate
+        try {
+            $user = User::where('id', '=', $user_id)->first();
+            $msg = "Fail to create a user";
+            if ($user) {
+
+                $to = $email;
+                $subject = "Confirmation from Wedonate to $user->username";
+                $headers = 'From: john.wedonate@gmail.com' . "\r\n" .
+                    'Reply-To: patuan03@yahoo.com' . "\r\n" .
+                    'MIME-Version: 1.0' . "\r\n".
+                    'Content-type: text/html; charset=utf-8' . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+                $message = "Dear,". "<br/>";
+                $message .= "Please click the link below to verify and activate your account".  "<br/>";
+                $message .= "<a href='http://www.wedonate.com/confirm.php?passkey=$user->uuid'>http://www.wedonate.com/confirm.php?passkey=$user->uuid</a>";
+
+                $sentmail = mail($to,$subject,$message,$headers);
+                if($sentmail)
+                {
+                    $msg = "User Created Successfully.Your Confirmation link Has Been Sent To Your Email Address.";
+                }
+                else
+                {
+                    $msg = "Cannot send Confirmation link to your e-mail address";
+                }
+            }
+            return $msg;
+        } catch (Exception $e) {}
+
+    }
+
+    public function postUserEdit(Request $request, $uuid) {
+
+        $user = User::where('uuid', $uuid)->first();
+        $profile = UserProfile::where('user_id', $user->id)->first();
+        if($user && $profile){
+            $user->email = $request->input('email');
+            $profile->firstname = $request->input('firstname');
+            $profile->lastname = $request->input('lastname');
+            $user->save();
+            $profile->save();
+        }
+
+        return redirect(route('getUserEdit', $uuid))
+            ->withFlashMessage('User Updated Successfully.');
+
+    }
+
+
+    public function getUserRemove(Request $request, $uuid) {
+        try{
+        $user = User::where('uuid', $uuid)->first();
+        $profile = UserProfile::where('user_id', $user->id)->delete();
+        $user = User::where('uuid', $uuid)->delete();
+        }catch (Exception $e) {}
+
+        return redirect(route('getUsers'))
+            ->withFlashMessage('User Deleted Successfully.');
+
+    }
+
+    //ROLES
 	public function getRoles(Request $request) {
 
 		return view('admin.wedonate.roles');

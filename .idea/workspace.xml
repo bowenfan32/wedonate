@@ -2,159 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450029f-8f62-4715-9eca-5c0c16bce385" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/Champagne_Limousines.ttf" afterPath="$PROJECT_DIR$/public/fonts/Champagne_Limousines.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Bold.ttf" afterPath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Bold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Bold_Italic.ttf" afterPath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Bold_Italic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Italic.ttf" afterPath="$PROJECT_DIR$/public/fonts/Champagne_Limousines_Italic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/DonatePag-Sec4.jpg" afterPath="$PROJECT_DIR$/public/img/DonatePag-Sec4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/DonatePag-Sec5.jpg" afterPath="$PROJECT_DIR$/public/img/DonatePag-Sec5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/DonatePag-Sec6.jpg" afterPath="$PROJECT_DIR$/public/img/DonatePag-Sec6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/ajax-loader.gif" afterPath="$PROJECT_DIR$/public/lib/slick/ajax-loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/arrow.png" afterPath="$PROJECT_DIR$/public/img/vectors/arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_grey.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_grey.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_map.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_map.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_map.png" afterPath="$PROJECT_DIR$/public/img/bg/bg_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_map_2.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_map_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_map_clear.png" afterPath="$PROJECT_DIR$/public/img/bg/bg_map_clear.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_ripple.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_ripple.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_volunteer.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_volunteer.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_white_01.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_white_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg/bg_white_pattern.jpg" afterPath="$PROJECT_DIR$/public/img/bg/bg_white_pattern.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/book244.png" afterPath="$PROJECT_DIR$/public/img/vectors/book244.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/book244_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/book244_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/businessman254.png" afterPath="$PROJECT_DIR$/public/img/vectors/businessman254.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/businessman254_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/businessman254_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/clock96.png" afterPath="$PROJECT_DIR$/public/img/vectors/clock96.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/clock96_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/clock96_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/credit.png" afterPath="$PROJECT_DIR$/public/img/vectors/credit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/deadlines.png" afterPath="$PROJECT_DIR$/public/img/vectors/deadlines.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/deadlines_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/deadlines_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/donation1.png" afterPath="$PROJECT_DIR$/public/img/vectors/donation1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/images/favicon.png" afterPath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/images/favicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/football129.png" afterPath="$PROJECT_DIR$/public/img/vectors/football129.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/football129_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/football129_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sponsors/greywing_bg.jpg" afterPath="$PROJECT_DIR$/public/img/sponsors/greywing_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sponsors/greywing_bird.png" afterPath="$PROJECT_DIR$/public/img/sponsors/greywing_bird.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sponsors/greywing_box.png" afterPath="$PROJECT_DIR$/public/img/sponsors/greywing_box.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sponsors/greywing_logo.png" afterPath="$PROJECT_DIR$/public/img/sponsors/greywing_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/group.png" afterPath="$PROJECT_DIR$/public/img/vectors/group.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/group5.png" afterPath="$PROJECT_DIR$/public/img/vectors/group5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/group58.png" afterPath="$PROJECT_DIR$/public/img/vectors/group58.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/group58_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/group58_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/group5_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/group5_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/gymnast3.png" afterPath="$PROJECT_DIR$/public/img/vectors/gymnast3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/gymnast3_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/gymnast3_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/heart1.png" afterPath="$PROJECT_DIR$/public/img/vectors/heart1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/help21.png" afterPath="$PROJECT_DIR$/public/img/vectors/help21.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/help21_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/help21_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/idea19.png" afterPath="$PROJECT_DIR$/public/img/vectors/idea19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/idea19_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/idea19_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/inspiration.png" afterPath="$PROJECT_DIR$/public/img/vectors/inspiration.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/inspiration_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/inspiration_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/ipad35.png" afterPath="$PROJECT_DIR$/public/img/vectors/ipad35.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/long_logo.png" afterPath="$PROJECT_DIR$/public/img/logo/long_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/long_logo_beta.png" afterPath="$PROJECT_DIR$/public/img/logo/long_logo_beta.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/man204.png" afterPath="$PROJECT_DIR$/public/img/vectors/man204.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/man204_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/man204_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/man216.png" afterPath="$PROJECT_DIR$/public/img/vectors/man216.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/man216_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/man216_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/ripple.png" afterPath="$PROJECT_DIR$/public/img/logo/ripple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/ripple.png" afterPath="$PROJECT_DIR$/public/img/vectors/ripple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/ripple_half.png" afterPath="$PROJECT_DIR$/public/img/logo/ripple_half.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/runer.png" afterPath="$PROJECT_DIR$/public/img/vectors/runer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/runer_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/runer_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/send4.png" afterPath="$PROJECT_DIR$/public/img/vectors/send4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/send4_w.png" afterPath="$PROJECT_DIR$/public/img/vectors/send4_w.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/server.png" afterPath="$PROJECT_DIR$/public/img/vectors/server.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/fonts/slick.eot" afterPath="$PROJECT_DIR$/public/lib/slick/fonts/slick.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/fonts/slick.ttf" afterPath="$PROJECT_DIR$/public/lib/slick/fonts/slick.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/fonts/slick.woff" afterPath="$PROJECT_DIR$/public/lib/slick/fonts/slick.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/stand_logo.png" afterPath="$PROJECT_DIR$/public/img/logo/stand_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vectors/tick.png" afterPath="$PROJECT_DIR$/public/img/vectors/tick.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_flat_10_000000_40x100.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_flat_10_000000_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_222222_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_228ef1_256x240.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_228ef1_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ef8c08_256x240.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ef8c08_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ffd27a_256x240.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ffd27a_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/images/ui-icons_ffffff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo/white_logo.png" afterPath="$PROJECT_DIR$/public/img/logo/white_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/.gitignore" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/README.md" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/dropzone/basic.min.css" afterPath="$PROJECT_DIR$/public/lib/dropzone/basic.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/css/bootstrap-combobox.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/css/bootstrap-combobox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/bootstrap-combobox.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/bootstrap-combobox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/unit/bootstrap-combobox.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/unit/bootstrap-combobox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/less/combobox.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/less/combobox.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/config.rb" afterPath="$PROJECT_DIR$/public/lib/slick/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/dash.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/dash.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/public/lib/dropzone/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/dropzone/dropzone.min.css" afterPath="$PROJECT_DIR$/public/lib/dropzone/dropzone.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/index.html" afterPath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/index.html" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/index.html" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.js" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.min.js" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.structure.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.structure.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.structure.min.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.structure.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.theme.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.theme.min.css" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/jquery-ui.theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/jquery.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/external/jquery/jquery.js" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.11.2.custom/external/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/css/normalize.css" afterPath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/css/normalize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/npm.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/parsley/parsley.min.js" afterPath="$PROJECT_DIR$/public/lib/parsley/parsley.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/qunit.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/qunit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/qunit.js" afterPath="$PROJECT_DIR$/public/lib/bootstrap-combobox-master/js/tests/vendor/qunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/css/skeleton.css" afterPath="$PROJECT_DIR$/public/lib/Skeleton-2.0.4/css/skeleton.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick-theme.css" afterPath="$PROJECT_DIR$/public/lib/slick/slick-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick-theme.scss" afterPath="$PROJECT_DIR$/public/lib/slick/slick-theme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick.css" afterPath="$PROJECT_DIR$/public/lib/slick/slick.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick.js" afterPath="$PROJECT_DIR$/public/lib/slick/slick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick.min.js" afterPath="$PROJECT_DIR$/public/lib/slick/slick.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/slick.scss" afterPath="$PROJECT_DIR$/public/lib/slick/slick.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slick/fonts/slick.svg" afterPath="$PROJECT_DIR$/public/lib/slick/fonts/slick.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/slideout.min.js" afterPath="$PROJECT_DIR$/public/lib/slideout.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/swiper.min.js" afterPath="$PROJECT_DIR$/public/lib/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wedonate_new.iml" afterPath="$PROJECT_DIR$/.idea/wedonate_new.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/interface/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/interface/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/header.scss" afterPath="$PROJECT_DIR$/assets/css/header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/menu_primary.scss" afterPath="$PROJECT_DIR$/assets/css/menu_primary.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wedonate_new.iws" />
@@ -179,97 +47,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/interface/header.blade.php">
+      <file leaf-file-name="AuthController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+            <state line="104" column="29" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-47.73077" vertical-offset="357" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/interface/landing.blade.php">
+      <file leaf-file-name="connect.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="53" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-8.307693" vertical-offset="685" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/interface/nav/top.blade.php">
+      <file leaf-file-name="AuthController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <file leaf-file-name="PasswordController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="750">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="causeofthemonth.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-35.307693" vertical-offset="714" max-vertical-offset="3179">
               <folding>
-                <marker date="1448397913000" expanded="true" signature="31:1777" placeholder="..." />
-                <marker date="1448397913000" expanded="true" signature="38:978" placeholder="..." />
-                <marker date="1448397913000" expanded="true" signature="227:366" placeholder="..." />
-                <marker date="1448397913000" expanded="true" signature="776:967" placeholder="..." />
-                <marker date="1448397913000" expanded="true" signature="985:1769" placeholder="..." />
+                <element signature="n#style#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.php">
+      <file leaf-file-name="sections.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.875" vertical-offset="645" max-vertical-offset="2175">
+            <state line="20" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.65384614" vertical-offset="323" max-vertical-offset="1088">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <file leaf-file-name="menu_secondary.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/menu_secondary.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="29.375" vertical-offset="705" max-vertical-offset="2190">
+            <state line="34" column="68" selection-start="1893" selection-end="1965" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="53" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6645">
+            <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-9.153846" vertical-offset="1088" max-vertical-offset="3298">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_landing.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php">
+      <file leaf-file-name="AdminWedonateController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34941763" vertical-offset="210" max-vertical-offset="1065">
-              <folding />
+            <state line="275" column="103" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.4204947" vertical-offset="4437" max-vertical-offset="6001">
+              <folding>
+                <element signature="e#39#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slideout.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wedonate_carousel/js/slideout.min.js">
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="211" column="9" selection-start="8595" selection-end="8595" vertical-scroll-proportion="-137.96153" vertical-offset="0" max-vertical-offset="3825">
               <folding />
             </state>
           </provider>
@@ -289,6 +156,29 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/assets/css/footer.scss" />
+        <option value="$PROJECT_DIR$/resources/views/interface/footer.blade.php" />
+        <option value="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/assets/css/menu_primary.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" />
+        <option value="$PROJECT_DIR$/assets/css/header.scss" />
+        <option value="$PROJECT_DIR$/resources/views/admin/dash.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/app.css" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" />
       </list>
     </option>
   </component>
@@ -300,10 +190,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="23" />
-    <option name="width" value="1330" />
-    <option name="height" value="745" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -331,6 +221,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,6 +315,14 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -435,7 +334,159 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="popups" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="errors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="section" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,9 +522,142 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedonate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,6 +668,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -519,31 +704,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1330" height="745" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32594937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25797692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23834586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33925685" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24956672" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.092084005" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -563,181 +748,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/menu_top.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/interface/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/image.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/slideout.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/menu_secondary.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/menu_primary.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/backgrounds.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page/donate.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wedonate_carousel/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -762,46 +773,19 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_carousel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/menu_top.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/interface/nav/top.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wedonate_carousel/js/slideout.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wedonate_carousel/index.html">
@@ -809,58 +793,292 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/interface/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/interface/landing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <marker date="1448397913000" expanded="true" signature="31:1777" placeholder="..." />
-            <marker date="1448397913000" expanded="true" signature="38:978" placeholder="..." />
-            <marker date="1448397913000" expanded="true" signature="227:366" placeholder="..." />
-            <marker date="1448397913000" expanded="true" signature="776:967" placeholder="..." />
-            <marker date="1448397913000" expanded="true" signature="985:1769" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.875" vertical-offset="645" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="53" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6645">
-          <folding />
-        </state>
+        <state line="38" column="5" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-9.153846" vertical-offset="408" max-vertical-offset="2465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="29.375" vertical-offset="705" max-vertical-offset="2190">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="78.46154" vertical-offset="2040" max-vertical-offset="3145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/menu_top.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.727758" vertical-offset="458" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.2692308" vertical-offset="59" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="19" selection-start="595" selection-end="595" vertical-scroll-proportion="-7.019608" vertical-offset="356" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2253" column="31" selection-start="37014" selection-end="37025" vertical-scroll-proportion="0.0" vertical-offset="40175" max-vertical-offset="115719">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/menu_primary.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css 2/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22924" selection-start="23103" selection-end="23103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="28" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/landing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="5" selection-start="854" selection-end="854" vertical-scroll-proportion="-5.352941" vertical-offset="628" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/header_bak1.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="48" selection-end="63" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/nav/top.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/errors/503.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="54" selection-start="3947" selection-end="3947" vertical-scroll-proportion="0.0" vertical-offset="2600" max-vertical-offset="7531" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34941763" vertical-offset="210" max-vertical-offset="1065">
+        <state line="38" column="4" selection-start="838" selection-end="897" vertical-scroll-proportion="-1.9230769" vertical-offset="596" max-vertical-offset="1479" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1037">
+          <folding>
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/roles.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="-0.30769232" vertical-offset="332" max-vertical-offset="1309">
+          <folding>
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="110" selection-start="1848" selection-end="1876" vertical-scroll-proportion="-21.384615" vertical-offset="702" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="136" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-23.692308" vertical-offset="302" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dash.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="245" selection-end="245" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="32" selection-start="319" selection-end="336" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="187" selection-start="30826" selection-end="30826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="14" selection-start="542" selection-end="542" vertical-scroll-proportion="-0.96153843" vertical-offset="417" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="387" selection-end="513" vertical-scroll-proportion="3.4615386" vertical-offset="498" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="28" selection-start="1547" selection-end="1547" vertical-scroll-proportion="-5.230769" vertical-offset="867" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.65384614" vertical-offset="323" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/menu_secondary.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="68" selection-start="1893" selection-end="1965" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-9.153846" vertical-offset="1088" max-vertical-offset="3298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-35.307693" vertical-offset="714" max-vertical-offset="3179">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="29" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-47.73077" vertical-offset="357" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-8.307693" vertical-offset="685" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="211" column="9" selection-start="8595" selection-end="8595" vertical-scroll-proportion="-137.96153" vertical-offset="0" max-vertical-offset="3825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="103" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.4204947" vertical-offset="4437" max-vertical-offset="6001">
+          <folding>
+            <element signature="e#39#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

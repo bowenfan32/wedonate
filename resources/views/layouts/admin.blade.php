@@ -8,8 +8,9 @@
 
 @section('content_master')
 
-<header class="site-header">
-	@include('interface.header')
+
+<header class="site-admin-header">
+	@include('interface.header_bak1')
 </header>
 
 <nav class="site-admin-header">
@@ -20,7 +21,7 @@
 	@yield('content')
 </div>
 
-<footer class="site-footer">
+<footer class="site-admin-footer">
 	@include('interface.footer')
 </footer>
 

@@ -18,7 +18,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="mb-2">
 	<div class="container">
@@ -52,7 +52,7 @@
 							<td>{{ $cause->number_of_donations }}</td>
 							<td>${{ $cause->total_donations }}</td>
 							<td>@if ($cause->DGR == 1)Yes @else No @endif</td>
-							<td><a href="{{ route('getCausesEdit', $cause->uuid)}}" class="c-black td-none">edit</a></td>
+							<td><a href="{{ route('getCausesEdit', $cause->uuid)}}" class="c-black td-none"><i class="fa fa-pencil"></i></a></td>
 						</tr>
 
 					@endforeach

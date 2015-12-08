@@ -18,7 +18,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="mb-2">
 	<div class="container">

@@ -35,6 +35,7 @@ Route::post('/donate/a/stripe', [
   'as' => 'donate_ajax_stripe', 'uses' => 'DonateController@ajaxPostStripe'
 ]);
 
+
 // Stripe Donate
 Route::post('/donate/p/stripe', [
   'as' => 'donate_stripe', 'uses' => 'DonateController@postStripe'
@@ -116,15 +117,24 @@ Route::post('/dashboard/causes/{uuid}', [
 Route::get('/dashboard/users', [
   'as' => 'getUsers', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@getUsers'
 ]);
+//USER
 Route::get('/dashboard/users/create', [
   'as' => 'getUserCreate', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@getUserCreate'
 ]);
 Route::post('/dashboard/users/create', [
   'as' => 'getUserCreate', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@postUserCreate'
 ]);
-Route::get('/dashboard/users/{uuid}', [
-  'as' => 'getUser', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@getUser'
+Route::get('/dashboard/users/{uuid}/edit', [
+  'as' => 'getUserEdit', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@getUserEdit'
 ]);
+Route::post('/dashboard/users/{uuid}/edit', [
+    'as' => 'postUserEdit', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@postUserEdit'
+]);
+Route::get('/dashboard/users/{uuid}/remove', [
+    'as' => 'getUserRemove', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getUserRemove'
+]);
+
+//ROLEs
 Route::get('/dashboard/roles', [
   'as' => 'getRoles', 'middleware' => 'auth.wedonate',   'uses' => 'AdminWedonateController@getRoles'
 ]);

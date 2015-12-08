@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section>
 	<div class="container">
@@ -39,7 +39,7 @@
 					</div>
 					<div class="form-group">
 						<label>Description</label>
-						<textarea class="form-control" name="description" value="{{ $cause->description }}"></textarea>
+						<textarea class="form-control" name="description">{{ $cause->description }}</textarea>
 					</div>
 					<div class="checkbox">
 				    <label>
@@ -67,7 +67,7 @@
 						</div>
 					</div>
 
-					<button type="submit" class="btn btn-primary">Create</button>
+					<button type="submit" class="btn btn-primary">Update</button>
 					<a href="{{ route('getCauseRemove', $cause->uuid) }}" class="btn btn-sm btn-primary pull-right">delete</a>
 				{!! Form::close() !!}
 

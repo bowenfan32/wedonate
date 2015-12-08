@@ -18,10 +18,13 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="mb-3">
 	<div class="container">
+        @if (Session::has('flash_message'))
+        <h3 style="color:#ff0000;">{{ Session::get('flash_message') }}</h3>
+        @endif
 		<div class="row">
 			<div class="col-sm-6">
 
