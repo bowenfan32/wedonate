@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450029f-8f62-4715-9eca-5c0c16bce385" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/dash.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/dash.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/interface/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/interface/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/donator/dash.blade.php" afterPath="$PROJECT_DIR$/resources/views/donator/dash.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/footer.scss" afterPath="$PROJECT_DIR$/assets/css/footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/header.scss" afterPath="$PROJECT_DIR$/assets/css/header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/menu_primary.scss" afterPath="$PROJECT_DIR$/assets/css/menu_primary.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wedonate_new.iws" />
@@ -47,67 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AuthController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+      <file leaf-file-name="header.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="29" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-47.73077" vertical-offset="357" max-vertical-offset="3043">
+            <state line="9" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.27224198" vertical-offset="0" max-vertical-offset="562">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connect.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-8.307693" vertical-offset="685" max-vertical-offset="1445">
+            <state line="2" column="30" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <file leaf-file-name="footer.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="748">
+            <state line="9" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PasswordController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wedonate_carousel/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="629">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="causeofthemonth.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-35.307693" vertical-offset="714" max-vertical-offset="3179">
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sections.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.65384614" vertical-offset="323" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_secondary.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/menu_secondary.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="68" selection-start="1893" selection-end="1965" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
+            <state line="3" column="22697" selection-start="22876" selection-end="22876" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -116,27 +69,43 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-9.153846" vertical-offset="1088" max-vertical-offset="3298">
+            <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3451">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminWedonateController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php">
+      <file leaf-file-name="DashController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="275" column="103" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.4204947" vertical-offset="4437" max-vertical-offset="6001">
-              <folding>
-                <element signature="e#39#73#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
+      <file leaf-file-name="dash.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/donator/dash.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="9" selection-start="8595" selection-end="8595" vertical-scroll-proportion="-137.96153" vertical-offset="0" max-vertical-offset="3825">
+            <state line="16" column="9" selection-start="270" selection-end="277" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dash.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/dash.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="25" selection-start="312" selection-end="321" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="48" selection-start="298" selection-end="298" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -158,27 +127,28 @@
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/assets/css/footer.scss" />
         <option value="$PROJECT_DIR$/resources/views/interface/footer.blade.php" />
         <option value="$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/assets/css/menu_primary.scss" />
         <option value="$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php" />
-        <option value="$PROJECT_DIR$/assets/css/header.scss" />
         <option value="$PROJECT_DIR$/resources/views/admin/dash.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php" />
+        <option value="$PROJECT_DIR$/resources/views/donator/dash.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/app.css" />
+        <option value="$PROJECT_DIR$/assets/css/footer.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+        <option value="$PROJECT_DIR$/assets/css/header.scss" />
       </list>
     </option>
   </component>
@@ -221,7 +191,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,28 +245,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -321,158 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="popups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nav" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="section" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,114 +345,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate_new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wedonate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,7 +398,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -748,26 +442,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wedonate_carousel/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wedonate_carousel/js/swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wedonate_carousel/css/swiper.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wedonate_carousel/css/swiper.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -803,11 +477,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="78.46154" vertical-offset="2040" max-vertical-offset="3145" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/menu_top.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.727758" vertical-offset="458" max-vertical-offset="1071" />
@@ -825,9 +494,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/bootstrap-3.3.5-dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2253" column="31" selection-start="37014" selection-end="37025" vertical-scroll-proportion="0.0" vertical-offset="40175" max-vertical-offset="115719">
-          <folding />
-        </state>
+        <state line="2253" column="31" selection-start="37014" selection-end="37025" vertical-scroll-proportion="0.0" vertical-offset="40175" max-vertical-offset="115719" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/menu_primary.scss">
@@ -847,11 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="289" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/interface/landing.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391" />
@@ -860,11 +522,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/interface/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="5" selection-start="854" selection-end="854" vertical-scroll-proportion="-5.352941" vertical-offset="628" max-vertical-offset="1241" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/interface/header.blade.php">
@@ -897,188 +554,178 @@
         <state line="112" column="54" selection-start="3947" selection-end="3947" vertical-scroll-proportion="0.0" vertical-offset="2600" max-vertical-offset="7531" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="838" selection-end="897" vertical-scroll-proportion="-1.9230769" vertical-offset="596" max-vertical-offset="1479" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes_create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1037">
-          <folding>
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449323243729" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1037" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/roles.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/cause.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="-0.30769232" vertical-offset="332" max-vertical-offset="1309">
-          <folding>
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449293932147" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="20" column="10" selection-start="330" selection-end="330" vertical-scroll-proportion="-0.30769232" vertical-offset="332" max-vertical-offset="1309" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/users.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="110" selection-start="1848" selection-end="1876" vertical-scroll-proportion="-21.384615" vertical-offset="702" max-vertical-offset="1598">
-          <folding />
-        </state>
+        <state line="74" column="110" selection-start="1848" selection-end="1876" vertical-scroll-proportion="-21.384615" vertical-offset="702" max-vertical-offset="1598" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="136" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-23.692308" vertical-offset="302" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dash.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="245" selection-end="245" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="319" selection-end="336" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="187" selection-start="30826" selection-end="30826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
+        <state line="54" column="136" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-23.692308" vertical-offset="302" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/user.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="542" selection-end="542" vertical-scroll-proportion="-0.96153843" vertical-offset="417" max-vertical-offset="1139">
-          <folding />
-        </state>
+        <state line="26" column="14" selection-start="542" selection-end="542" vertical-scroll-proportion="-0.96153843" vertical-offset="417" max-vertical-offset="1139" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/user_create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="387" selection-end="513" vertical-scroll-proportion="3.4615386" vertical-offset="498" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="24" column="8" selection-start="387" selection-end="513" vertical-scroll-proportion="3.4615386" vertical-offset="498" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/causes_edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="1547" selection-end="1547" vertical-scroll-proportion="-5.230769" vertical-offset="867" max-vertical-offset="1785">
-          <folding />
-        </state>
+        <state line="59" column="28" selection-start="1547" selection-end="1547" vertical-scroll-proportion="-5.230769" vertical-offset="867" max-vertical-offset="1785" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/sections.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.65384614" vertical-offset="323" max-vertical-offset="1088">
+        <state line="20" column="9" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1088">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/menu_secondary.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="68" selection-start="1893" selection-end="1965" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="-9.153846" vertical-offset="1088" max-vertical-offset="3298">
+        <state line="34" column="68" selection-start="1893" selection-end="1965" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/wedonate/section/causeofthemonth.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-35.307693" vertical-offset="714" max-vertical-offset="3179">
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="96" column="0" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3179">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="29" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-47.73077" vertical-offset="357" max-vertical-offset="3043">
-          <folding />
-        </state>
+        <state line="104" column="29" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0" vertical-offset="1768" max-vertical-offset="3213" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/interface/popups/connect.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-8.307693" vertical-offset="685" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="53" column="0" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="9" selection-start="8595" selection-end="8595" vertical-scroll-proportion="-137.96153" vertical-offset="0" max-vertical-offset="3825">
-          <folding />
-        </state>
+        <state line="211" column="9" selection-start="8595" selection-end="8595" vertical-scroll-proportion="0.0" vertical-offset="3587" max-vertical-offset="3825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminWedonateController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="103" selection-start="7031" selection-end="7031" vertical-scroll-proportion="0.4204947" vertical-offset="4437" max-vertical-offset="6001">
-          <folding>
-            <element signature="e#39#73#0" expanded="true" />
-          </folding>
+        <state line="284" column="17" selection-start="7477" selection-end="7477" vertical-scroll-proportion="-34.653847" vertical-offset="3927" max-vertical-offset="6001" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="78.46154" vertical-offset="2040" max-vertical-offset="3145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/default_landing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="31" selection-start="929" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="101" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wedonate_carousel/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22697" selection-start="22876" selection-end="22876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/donator/donations.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/donator/dash.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="270" selection-end="277" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dash.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="312" selection-end="321" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="48" selection-start="298" selection-end="298" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.27224198" vertical-offset="0" max-vertical-offset="562">
+          <folding />
         </state>
       </provider>
     </entry>

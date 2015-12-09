@@ -17,11 +17,11 @@
 	@yield('menu_secondary')
 </nav>
 
-<div class="site-content">
+<div class="site-content" style="min-height: 77%;">
 	@yield('content')
 </div>
 
-<footer class="site-admin-footer">
+<footer class="site-footer">
 	@include('interface.footer')
 </footer>
 
