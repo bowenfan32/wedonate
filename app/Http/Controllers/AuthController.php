@@ -71,20 +71,26 @@ class AuthController extends Controller {
 			try {
 				$user = User::where('email', '=', $email)->first();
 				if ($user) {
-					return [
-						'success' => '0',
-						'results' => '',
-						'messages' => 'The account already exists in weDonate.',
-						'redirect' => ''
-					];
-				}
+                    return [
+                        'success' => '0',
+                        'results' => '',
+                        'messages' => 'The account already exists in weDonate.',
+                        'redirect' => ''
+                    ];
+                }
 			} catch (Exception $e) {}
 
 			// TODO: create a globa function to create a user
 
 			$user = new User;
 			$user->uuid = Uuid::generate(4);
-			$user->registered_ip = $_SERVER['REMOTE_ADDR'];
+
+            // $_SERVER is not available during unit testing
+            $server = "127.0.0.1";
+            if (isset($_SERVER['REMOTE_ADDR'])){
+                $server=$_SERVER['REMOTE_ADDR'];
+            }
+			$user->registered_ip = $server;
 			$user->registered_provider = 'email';
 			$user->last_login_ip = null;
 			$user->last_login_datetime = date('Y-m-d H:i:s');
@@ -106,6 +112,7 @@ class AuthController extends Controller {
 
 			$role = Role::where('name', '=', 'donator')->first();
 			$user->attachRole($role);
+
 
 			if (Auth::attempt(['username' => $email, 'password' => $password])) {
 				return [
