@@ -27,7 +27,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/wedonate/public',
+    'url' => 'http://localhost:8888/wedonate_new/public',
     // 'url' => 'http://wedonate.org',
 
     /*
@@ -97,7 +97,7 @@ return [
     |
     */
 
-    'log' => 'single',
+    'log' => 'daily',
 
     /*
     |--------------------------------------------------------------------------
