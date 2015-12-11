@@ -22,17 +22,33 @@
 
 <section>
 	<div class="container">
+        <div class="error-message">
+
+        @if ( $errors->count() > 0 )
+        <h3>The following errors have occurred:</h3>
+
+        <ul>
+            @foreach( $errors->all() as $message )
+            <li>{{ $message }}</li>
+            @endforeach
+        </ul>
+        @endif
+
+        @if (Session::has('flash_message'))
+            <h3>{{ Session::get('flash_message') }}</h3>
+        @endif
+        </div>
 		<div class="row">
 			<div class="col-sm-12">
 
 				{!! Form::open(array('url' => route('getCausesCreate'), 'class' => 'form')) !!}
 					<div class="form-group">
 						<label>Name</label>
-						<input type="text" name="name" class="form-control" placeholder="name">
+						<input type="text" name="name"  id="name" class="form-control" placeholder="name">
 					</div>
 					<div class="form-group">
 						<label>Description</label>
-						<textarea class="form-control" name="description"></textarea>
+						<textarea class="form-control" name="description" id="description"></textarea>
 					</div>
 					<div class="checkbox">
 				    <label>

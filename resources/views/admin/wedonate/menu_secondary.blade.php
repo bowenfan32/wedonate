@@ -20,29 +20,29 @@
             <li><a href="{{ route('getCauses') }}">Cause of the Month</a></li>
           </ul>
         </li>
-        <li><a href="{{ route('getFunds') }}">Funds</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donations <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-	        	<li><a href="{{ route('getDonations') }}">Donations</a></li>
-						<li><a href="#">Breakdown</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accounts <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-		        <li><a href="{{ route('getUsers') }}">Users</a></li>
-		        <li><a href="{{ route('getRoles') }}">Roles</a></li>
-		        <li><a href="{{ route('getPermissions') }}">Permissions</a></li>
-					</ul>
-				</li>
+        <!-- <li><a href="{{ route('getFunds') }}">Funds</a></li> -->
         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+        <li><a href="{{ route('getDonations') }}">Donations</a></li>
+                <li><a href="{{ route('getBreakdown') }}">Breakdown</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accounts <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+        <li><a href="{{ route('getUsers') }}">Users</a></li>
+        <li><a href="{{ route('getRoles') }}">Roles</a></li>
+        <li><a href="{{ route('getPermissions') }}">Permissions</a></li>
+            </ul>
+        </li>
+        <!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages and Sections <span class="caret"></span></a>
 					<ul class="dropdown-menu">
             <li><a href="{{ route('getPages') }}">Pages</a></li>
             <li><a href="{{ route('getSections') }}">Sections</a></li>
 					</ul>
-				</li>
+		</li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

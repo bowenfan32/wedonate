@@ -18,14 +18,33 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <section class="mb-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 
-				To be added.
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Cause</th>
+                        <th>Number of Donations</th>
+                        <th>Total Donations</th>
+                        <th>DGR</th>
+                        <th>Tools</th>
+                    </tr>
+                    @foreach($causes as $cause)
+
+                    <tr>
+                        <td>{{ $cause->name }}</td>
+                        <td>{{ $cause->number_of_donations }}</td>
+                        <td>${{ $cause->total_donations }}</td>
+                        <td>@if ($cause->DGR == 1)Yes @else No @endif</td>
+                        <td><a href="" class="c-black td-none"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+
+                    @endforeach
+                </table>
 
 			</div>
 		</div>

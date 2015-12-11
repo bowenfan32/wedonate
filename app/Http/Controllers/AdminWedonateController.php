@@ -2,6 +2,8 @@
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Input;
 
 use Webpatser\Uuid\Uuid;
 
@@ -60,6 +62,15 @@ class AdminWedonateController extends Controller {
 			->with('causes', $causes);
 
 	}
+    public function getBreakdown(Request $request) {
+
+        $causes = Cause::all();
+
+        return view('admin.wedonate.breakdown')
+            ->with('causes', $causes);
+
+    }
+
 
 	public function getCausesCreate(Request $request) {
 
@@ -69,6 +80,25 @@ class AdminWedonateController extends Controller {
 
 	public function postCausesCreate(Request $request) {
 
+        // create the validation rules ------------------------
+        $rules = array(
+                'name' => 'Required|Unique:causes',
+                'description'     => 'Required'
+        );
+        // do the validation ----------------------------------
+        // validate against the inputs from our form
+        $validator = Validator::make(Input::all(), $rules);
+        // check if the validator failed -----------------------
+        if ($validator->fails()) {
+
+            // get the error messages from the validator
+            $messages = $validator->messages();
+            // redirect our user back to the form with the errors from the validator
+            return redirect(route('getCausesCreate'))
+                ->withErrors($validator);
+        } else {
+
+        // validation successful ---------------------------
 		$cause = new Cause;
 		$cause->uuid = Uuid::generate(4);
 		$cause->name = $request->input('name');
@@ -94,7 +124,8 @@ class AdminWedonateController extends Controller {
 		$cause_meta->save();
 
 		return redirect(route('getCausesCreate'))
-			->with('messages', 'Causes created.');
+            ->withFlashMessage('Causes created.');
+        }
 
 	}
 

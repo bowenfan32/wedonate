@@ -12,6 +12,7 @@ class Cause extends Model {
 
   }
 
+
 	// public function number_of_donations() {
 	//
   //   return $this->hasMany('\App\Models\Donation', 'cause_id')->count();

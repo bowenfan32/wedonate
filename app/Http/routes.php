@@ -87,6 +87,10 @@ Route::get('/dashboard/sections/', [
 Route::get('/dashboard/causes', [
   'as' => 'getCauses', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCauses'
 ]);
+Route::get('/dashboard/breakdown', [
+    'as' => 'getBreakdown', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getBreakdown'
+]);
+
 Route::get('/dashboard/causes/create', [
   'as' => 'getCausesCreate', 'middleware' => 'auth.wedonate', 'uses' => 'AdminWedonateController@getCausesCreate'
 ]);
