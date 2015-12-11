@@ -24,15 +24,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
+				To Be Built.
 
-				<h3 class="tt-caps">{{ $funds_single->type }}</h3>
-				<h1>$ {{ $funds_single->amount }}</h1>
 
 			</div>
 			<div class="col-sm-6">
 
-				<h3 class="tt-caps">{{ $funds_subs->type }}</h3>
-				<h1>$ {{ $funds_subs->amount }}</h1>
+				:S
 
 			</div>
 		</div>

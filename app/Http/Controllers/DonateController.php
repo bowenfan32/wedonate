@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 
+use Log;
+
 use App\Models\PaymentsStripe;
 use App\Models\PaymentError;
 use App\Models\CardsStripe;
@@ -72,6 +74,8 @@ class DonateController extends BaseController {
 		$payment->cause_uuid = $request->input('cause');
 		$payment->amount = $request->input('amount');
 
+		Log::info('data payment id='.$payment->uuid.' by the user_id='.Auth::user()->id.' to the cause_id'.$payment->cause_uuid);
+
 		return [
 			'success' => '1',
 			'results' => $request->input('email'),
@@ -85,8 +89,11 @@ class DonateController extends BaseController {
 		// TODO: batch the updates into one call. Need a somethign that does it all sequentially.
 		// TODO: Fix all this. not good to do it all here.
 
-		$cause = Cause::where('uuid', $request->input('cause'))->first();
+		$cause = Cause::where('id', $request->input('cause'))->first();
 		$user = Auth::user();
+
+		Log::debug('A donation has been made by the user: '.Auth::user()->id.' to the cause name: '.$cause->name);
+
 		$j = User::where('id', '=', 1)->first();
 
 		$payment = new PaymentsStripe;
@@ -234,11 +241,14 @@ class DonateController extends BaseController {
 				$count++;
 			}
 
+			Log::info('Donation paid');
+
 			return redirect(route('getDonationSuccess', $payment->uuid));
 		}
 		else {
 
 			$message = $response->getMessage();
+			Log::debug($message);
 
 			$donation_errors = new PaymentError;
 			$donation_errors->uuid = Uuid::generate(4);
@@ -250,6 +260,8 @@ class DonateController extends BaseController {
 
 			$data = new \stdClass();
 			$data->title =
+
+			Log::debug('Donation Unsuccessful by the user_id='.Auth::user()->id);
 
 			Mail::send('emails.donate-result', $data, function($m) {
 	        $m->to($user->email, $user->name)->subject('weDonate - Donation Unsuccessful!');
@@ -270,9 +282,12 @@ class DonateController extends BaseController {
 	}
 
 	public function getDonationFailure(Request $request, $uuid) {
+		Log::info('Managing the donation failure'.$payment->id);
 
 		$payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
 		$error = PaymentError::where('payment_id', '=', $payment->id)->first();
+
+		Log::debug('DonateController.getDonationFailure');
 
 		return view('donate.failure')
 			->with('payment', $payment)

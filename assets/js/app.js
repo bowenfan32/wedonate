@@ -1,5 +1,5 @@
 // GlOBALS
-const SITEURL = 'http://localhost/wedonate/public';
+const SITEURL = 'http://localhost:8000';
 //const SITEURL = 'http://wedonate.org';
 
 // Redirect after X amount of seconds
@@ -162,7 +162,7 @@ $(document).ready(function() {
 
 	// Form Vaidates
 
-	
+
 	$(document).on('input', '#global-donate-popup form input',function() {
 		var $input = $(this);
 
@@ -199,8 +199,8 @@ $(document).ready(function() {
 	$(window).on('popstate', function() {
 		handler.close();
 	});
-	
-	
+
+
 	if ($('.action').html() == '') {
 		$action = $('.action');
 		$action.fadeIn('slow');
@@ -210,7 +210,7 @@ $(document).ready(function() {
 		var styles = {'position': 'fixed', 'top': '0', 'bottom': 'auto', 'margin-top': 'auto', 'width': '100%'};
 		$('.landing-navbar').css(styles);
 	}
-	
+
 	function reset_navbar() {
 		var styles = {'position': 'relative', 'margin-top': '-90px'};
 		$('.landing-navbar').css(styles);
@@ -355,7 +355,7 @@ $(document).ready(function() {
 
 	$('.donate-ripple .choose input').on('input paste copy cut keyup keydown', function(event) {
 		if (event.keyCode >= 48 && event.keyCode <= 57 && current.val() >= 7) {
-			
+
 
 			// $('.amount-error').html('');
 			// $('.amount-error').removeClass('alert alert-danger');

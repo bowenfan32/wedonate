@@ -15,6 +15,8 @@ use App\Models\WedonateFund;
 use App\Models\CauseMeta;
 use App\Role;
 
+use Log;
+
 use Hash;
 use File;
 use Storage;
@@ -57,6 +59,8 @@ class AdminWedonateController extends Controller {
 	public function getCauses(Request $request) {
 
 		$causes = Cause::all();
+
+		Log::info('Getting list of causes');
 
 		return view('admin.wedonate.causes')
 			->with('causes', $causes);
@@ -123,6 +127,8 @@ class AdminWedonateController extends Controller {
 		$cause_meta->cause_id = $cause->id;
 		$cause_meta->save();
 
+		Log::info('Cause created successfully id='.$cause->id);
+
 		return redirect(route('getCausesCreate'))
             ->withFlashMessage('Causes created.');
         }
@@ -158,6 +164,8 @@ class AdminWedonateController extends Controller {
 		}
 		$cause->save();
 
+		Log::info('Cause edited successfully! id='.$uudi);
+
 		return redirect(route('getCauses'));
 
 	}
@@ -186,6 +194,8 @@ class AdminWedonateController extends Controller {
 		$cause->image = $image_name;
 		$cause->save();
 
+		Log::info('Image cause registered, image_name: '.$image_name);
+
     return [
 			'success' => '1',
 			'url', $cause->image
@@ -196,6 +206,8 @@ class AdminWedonateController extends Controller {
 	public function getCauseRemove(Request $request, $uuid) {
 
 		$cause = Cause::where('uuid', $uuid)->delete();
+
+		Log::info('Cause deleted id='.$uudi);
 
 		return redirect(route('getCauses'));
 
@@ -281,6 +293,8 @@ class AdminWedonateController extends Controller {
         $role = Role::where('id', '=', $request->input('role'))->first();
 		$user->attachRole($role);
 
+				Log::info('User created, id='.$user->uuid);
+
         //send email
         $message = $this -> sendEmail($email,$user->id);
 
@@ -308,6 +322,9 @@ class AdminWedonateController extends Controller {
                 $message .= "<a href='http://www.wedonate.com/confirm.php?passkey=$user->uuid'>http://www.wedonate.com/confirm.php?passkey=$user->uuid</a>";
 
                 $sentmail = mail($to,$subject,$message,$headers);
+
+								Log::debug('Sending email result='.$sentmail);
+
                 if($sentmail)
                 {
                     $msg = "User Created Successfully.Your Confirmation link Has Been Sent To Your Email Address.";
@@ -365,14 +382,16 @@ class AdminWedonateController extends Controller {
 	}
 
 	public function getFunds(Request $request) {
-
+		/* To Be Built.
 		$funds_single = WedonateFund::where('type', '=', 'single')->first();
 		$funds_subs = WedonateFund::where('type', '=', 'subscription')->first();
-
-		return view('admin.wedonate.funds')
-			->with('funds_single', $funds_single)
+		*/
+		Log::info('Getting funds. To Be Built.');
+		
+		return view('admin.wedonate.funds');
+			/*->with('funds_single', $funds_single)
 			->with('funds_subs', $funds_subs);
-
+			*/
 	}
 
 }

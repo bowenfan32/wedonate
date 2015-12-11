@@ -13,8 +13,8 @@
 
 					<div class="form-group">
 						<label>Your chosen cause:</label>
-            <input type="hidden" name="cause">
-            <input type="text" name="cause_name" class="form-control"  readonly="readonly">
+            <input type="hidden" name="cause" value="1">
+            <input type="text" name="cause_name" class="form-control"  readonly="readonly" value="Kids cancer">
 				  </div>
 					<div class="form-group">
 						<label>Amount</label>
@@ -51,7 +51,7 @@
 						data-email="">
 					</script>-->
 
-					<!-- <button id="donate" class="btn btn-secondary btn-block">Donate</button> -->
+					<button id="donate" class="btn btn-secondary btn-block">Donate</button>
 
 				</form>
       </div>

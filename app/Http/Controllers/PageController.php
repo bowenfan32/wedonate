@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
 use Illuminate\Http\Request;
-
+use Log;
 use App\Models\Cause;
 use App\Models\SectionMeta;
 
@@ -20,13 +20,13 @@ class PageController extends BaseController {
 	}
 
 	public function getSponsors(Request $request) {
-
+		Log::info('getting page.sponsors');
 		return view('page.sponsors');
 
 	}
 
 	public function getAbout(Request $request) {
-
+		Log::info('getting page.about');
 		return view('page.about');
 
 	}
