@@ -17,12 +17,15 @@ use Auth;
 class DonatorController extends Controller {
 
 	public function getDonatorDonations(Request $request) {
+        try{
+            $donations = Donation::where('id', Auth::user())->get();
 
-		$donations = Donation::where('id', Auth::user())->get();
-
-		return view('donator.donations')
-			->with('donations', $donations);
-
-	}
-
+            return view('donator.donations')
+                ->with('donations', $donations);
+        }catch(Exception $e){
+          throw $e;
+        }
+    }
 }
+
+

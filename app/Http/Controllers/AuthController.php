@@ -98,13 +98,7 @@ class AuthController extends Controller {
 
 			$user = new User;
 			$user->uuid = Uuid::generate(4);
-
-            // $_SERVER is not available during unit testing
-            $server = "127.0.0.1";
-            if (isset($_SERVER['REMOTE_ADDR'])){
-                $server=$_SERVER['REMOTE_ADDR'];
-            }
-			$user->registered_ip = $server;
+            $user->registered_ip = $_SERVER['REMOTE_ADDR'];
 			$user->registered_provider = 'email';
 			$user->last_login_ip = null;
 			$user->last_login_datetime = date('Y-m-d H:i:s');

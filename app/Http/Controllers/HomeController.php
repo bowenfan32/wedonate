@@ -12,13 +12,16 @@ use App\Models\SectionMeta;
 class HomeController extends BaseController {
 
 	public function getHome() {
+        try{
+            $causes = Cause::where('active', 1)->get();
+            $causeofthemonth = SectionMeta::where('meta_key', 'sort')->get();
 
-		$causes = Cause::where('active', 1)->get();
-		$causeofthemonth = SectionMeta::where('meta_key', 'sort')->get();
-
-		return view('page.donate')
-			->with('causes', $causes)
-			->with('causeofthemonth', $causeofthemonth);
+            return view('page.donate')
+                ->with('causes', $causes)
+                ->with('causeofthemonth', $causeofthemonth);
+        }catch(Exception $e){
+            throw $e;
+        }
 
 	}
 

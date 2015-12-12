@@ -6,7 +6,7 @@ use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
-
+use DB;
 use Log;
 
 use App\Models\PaymentsStripe;
@@ -30,7 +30,7 @@ use Mail;
 class DonateController extends BaseController {
 
 	protected function calcDonationSplit($amount) {
-
+        try{
 		$amount = (double)$amount;
 
 		$weDonate_keeps_perc = 0.14285714285714286;
@@ -54,7 +54,7 @@ class DonateController extends BaseController {
 		$amounts->weDonate = $weDonate;
 
 		return $amounts;
-
+        }catch(Exception $e){throw $e;}
 	}
 
 	public function getStripe() {
@@ -64,7 +64,7 @@ class DonateController extends BaseController {
 	}
 
 	public function ajaxPostStripe(Request $request) {
-
+        try{
 		// start getting inputs
 		$payment = new PaymentsStripe;
 		$payment->uuid = str_random(80);
@@ -81,6 +81,7 @@ class DonateController extends BaseController {
 			'results' => $request->input('email'),
 			'messages' => 'Donate.'
 		];
+        }catch(Exception $e){throw $e;}
 
 	}
 
@@ -89,209 +90,229 @@ class DonateController extends BaseController {
 		// TODO: batch the updates into one call. Need a somethign that does it all sequentially.
 		// TODO: Fix all this. not good to do it all here.
 
-		$cause = Cause::where('id', $request->input('cause'))->first();
-		$user = Auth::user();
+        //Start transaction
+        DB::beginTransaction();
+        try{
+            $cause = Cause::where('id', $request->input('cause'))->first();
+            $user = Auth::user();
 
-		Log::debug('A donation has been made by the user: '.Auth::user()->id.' to the cause name: '.$cause->name);
+            Log::debug('A donation has been made by the user: '.Auth::user()->id.' to the cause name: '.$cause->name);
 
-		$j = User::where('id', '=', 1)->first();
+            $j = User::where('id', '=', 1)->first();
 
-		$payment = new PaymentsStripe;
-		$payment->uuid = Uuid::generate(4);
-		$payment->status = 'pending';
-		$payment->email = $request->input('email');
-		$payment->user_uuid = Auth::user()->uuid;
-		$payment->cause_uuid = $request->input('cause');
-		$payment->amount = $request->input('amount');
-		$payment->token_id = $request->input('token_id');
-		$payment->save();
+            $payment = new PaymentsStripe;
+            $payment->uuid = Uuid::generate(4);
+            $payment->status = 'pending';
+            $payment->email = $request->input('email');
+            $payment->user_uuid = Auth::user()->uuid;
+            $payment->cause_uuid = $request->input('cause');
+            $payment->amount = $request->input('amount');
+            $payment->token_id = $request->input('token_id');
+            $payment->save();
 
-		// LETS FREAKING PAY THIS MOOLAH
-		$gateway = Omnipay::create('Stripe');
-		$gateway->initialize(array(
-   	// 	'apiKey' => 'sk_test_C84t7Wx9WghYFcTEBnQ5ReW3', // ntuanb@gmail.com
-   	// 	'apiKey' => 'sk_test_4Mw3CFZ7rUwIiJr3cl3ZKlRB', // michael
-   	// 	'apiKey' => 'sk_live_4Mw3J2UYXIETcKOIokDmXNvF', // real michael
-   	));
-		$transaction = $gateway->purchase(['amount' => (float)($payment->amount), 'currency' => 'AUD', 'token' => $payment->token_id]);
+            // LETS FREAKING PAY THIS MOOLAH
+            $gateway = Omnipay::create('Stripe');
+            $gateway->initialize(array(
+            // 	'apiKey' => 'sk_test_C84t7Wx9WghYFcTEBnQ5ReW3', // ntuanb@gmail.com
+            // 	'apiKey' => 'sk_test_4Mw3CFZ7rUwIiJr3cl3ZKlRB', // michael
+            // 	'apiKey' => 'sk_live_4Mw3J2UYXIETcKOIokDmXNvF', // real michael
+            ));
+            $transaction = $gateway->purchase(['amount' => (float)($payment->amount), 'currency' => 'AUD', 'token' => $payment->token_id]);
 
-		$response = $transaction->send();
+            $response = $transaction->send();
 
-    if ($response->isSuccessful()) {
-			$payment->status = 'paid';
-			$payment->charge_id = $response->getTransactionReference();
-			$payment->save();
+            if ($response->isSuccessful()) {
+                $payment->status = 'paid';
+                $payment->charge_id = $response->getTransactionReference();
+                $payment->save();
 
-			$donation = new Donation;
-			$donation->uuid = Uuid::generate(4);
-			$donation->type = 'single';
-			$donation->status = 'paid';
-			$donation->user_id = Auth::user()->id;
-			$donation->cause_id = $cause->id;
-			$donation->DGR = $cause->DGR;
-			$donation->amount = $payment->amount;
-			$donation->processor = 'stripe';
-			$donation->payment_id = $payment->id;
-			$donation->save();
+                $donation = new Donation;
+                $donation->uuid = Uuid::generate(4);
+                $donation->type = 'single';
+                $donation->status = 'paid';
+                $donation->user_id = Auth::user()->id;
+                $donation->cause_id = $cause->id;
+                $donation->DGR = $cause->DGR;
+                $donation->amount = $payment->amount;
+                $donation->processor = 'stripe';
+                $donation->payment_id = $payment->id;
+                $donation->save();
 
-			$splits = $this->calcDonationSplit($donation->amount);
+                $splits = $this->calcDonationSplit($donation->amount);
 
-			// WEDONATE keeps
-			$wedonate_funds = WedonateFund::where('type', '=', 'single')->first();
-			$amount = $wedonate_funds->amount + $splits->weDonate_keeps;
-			$wedonate_funds->amount = $amount;
-			$wedonate_funds->save();
+                // WEDONATE keeps
+                $wedonate_funds = WedonateFund::where('type', '=', 'single')->first();
+                $amount = $wedonate_funds->amount + $splits->weDonate_keeps;
+                $wedonate_funds->amount = $amount;
+                $wedonate_funds->save();
 
-			// IDONATE
-			$split = new DonationSplit;
-			$split->uuid = Uuid::generate(4);
-			$split->type = 'iDonate';
-			$split->user_id = Auth::user()->id;
-			$split->cause_id = $cause->id;
-			$split->recipient_type = 'cause';
-			$split->amount = $splits->iDonate;
-			$split->status = 1;
-			$split->donation_id = $donation->id;
-			$split->save();
+                // IDONATE
+                $split = new DonationSplit;
+                $split->uuid = Uuid::generate(4);
+                $split->type = 'iDonate';
+                $split->user_id = Auth::user()->id;
+                $split->cause_id = $cause->id;
+                $split->recipient_type = 'cause';
+                $split->amount = $splits->iDonate;
+                $split->status = 1;
+                $split->donation_id = $donation->id;
+                $split->save();
 
-			$cause = Cause::where('id', $cause->id)->first();
-			$cause->total_donations += $split->amount;
-			$cause->number_of_donations += 1;
-			$cause->save();
+                $cause = Cause::where('id', $cause->id)->first();
+                $cause->total_donations += $split->amount;
+                $cause->number_of_donations += 1;
+                $cause->save();
 
-			// UDONATE REFERRER
-			$split = new DonationSplit;
-			$split->uuid = Uuid::generate(4);
-			$split->type = 'uDonate_referrer';
-			$split->user_id = Auth::user()->id	;
+                // UDONATE REFERRER
+                $split = new DonationSplit;
+                $split->uuid = Uuid::generate(4);
+                $split->type = 'uDonate_referrer';
+                $split->user_id = Auth::user()->id	;
 
-			if ($user->profile->referrer_id) {
-				$split->recipient_id = $user->profile->referrer_id;
-			}
-			else {
-				$split->recipient_id = $j->id;
-			}
+                if ($user->profile->referrer_id) {
+                    $split->recipient_id = $user->profile->referrer_id;
+                }
+                else {
+                    $split->recipient_id = $j->id;
+                }
 
-			$split->recipient_type = 'user';
-			$split->amount = $splits->uDonate_referrer;
-			$split->status = 1;
-			$split->donation_id = $donation->id;
-			$split->save();
+                $split->recipient_type = 'user';
+                $split->amount = $splits->uDonate_referrer;
+                $split->status = 1;
+                $split->donation_id = $donation->id;
+                $split->save();
 
-			// Save the udonate refferer
-			$ref = UserProfile::where('user_id', $split->recipient_id)->first();
-			$ref->iDonate += $splits->uDonate_referrer;
-			$ref->save();
+                // Save the udonate refferer
+                $ref = UserProfile::where('user_id', $split->recipient_id)->first();
+                $ref->iDonate += $splits->uDonate_referrer;
+                $ref->save();
 
-			// UDONATE REFERREE
-			$split = new DonationSplit;
-			$split->uuid = Uuid::generate(4);
-			$split->type = 'uDonate_referree';
-			$split->user_id = $user->id;
-			$split->recipient_id = $user->id;
-			$split->recipient_type = 'self';
-			$split->amount = $splits->uDonate_referree;
-			$split->status = 1;
-			$split->donation_id = $donation->id;
-			$split->save();
+                // UDONATE REFERREE
+                $split = new DonationSplit;
+                $split->uuid = Uuid::generate(4);
+                $split->type = 'uDonate_referree';
+                $split->user_id = $user->id;
+                $split->recipient_id = $user->id;
+                $split->recipient_type = 'self';
+                $split->amount = $splits->uDonate_referree;
+                $split->status = 1;
+                $split->donation_id = $donation->id;
+                $split->save();
 
-			$ref = UserProfile::where('user_id', $split->recipient_id)->first();
-			$ref->iDonate += $splits->uDonate_referrer;
-			$ref->save();
+                $ref = UserProfile::where('user_id', $split->recipient_id)->first();
+                $ref->iDonate += $splits->uDonate_referrer;
+                $ref->save();
 
-			// update users amount for future REFERRE
-			$user->profile->referrer_amount_forward += $split->amount;
-			$user->profile->total_donations += $donation->amount;
-			$user->profile->donations_count += 1;
-			$user->profile->iDonate += $splits->iDonate;
-			$user->profile->uDonate += $splits->uDonate;
-			$user->profile->weDonate += $splits->weDonate;
-			$user->profile->save();
+                // update users amount for future REFERRE
+                $user->profile->referrer_amount_forward += $split->amount;
+                $user->profile->total_donations += $donation->amount;
+                $user->profile->donations_count += 1;
+                $user->profile->iDonate += $splits->iDonate;
+                $user->profile->uDonate += $splits->uDonate;
+                $user->profile->weDonate += $splits->weDonate;
+                $user->profile->save();
 
-			// weDONATE
-			$split = new DonationSplit;
-			$split->uuid = Uuid::generate(4);
-			$split->type = 'weDonate';
-			$split->user_id = $user->id;
-			$split->recipient_type = 'everyone';
-			$split->amount = $splits->weDonate;
-			$split->status = 1;
-			$split->donation_id = $donation->id;
-			$split->save();
+                // weDONATE
+                $split = new DonationSplit;
+                $split->uuid = Uuid::generate(4);
+                $split->type = 'weDonate';
+                $split->user_id = $user->id;
+                $split->recipient_type = 'everyone';
+                $split->amount = $splits->weDonate;
+                $split->status = 1;
+                $split->donation_id = $donation->id;
+                $split->save();
 
-			// Split the weDonate for each user
-			$users_count = User::all()->count();
-			$split = (float)($splits->weDonate) / $users_count;
-			DB::table('user_profiles')->increment('iDonate', $split);
-			DB::table('user_profiles')->increment('total_donations', $split);
+                // Split the weDonate for each user
+                $users_count = User::all()->count();
+                $split = (float)($splits->weDonate) / $users_count;
+                DB::table('user_profiles')->increment('iDonate', $split);
+                DB::table('user_profiles')->increment('total_donations', $split);
 
-			// Split if for each donation too
-			$causes_count = Cause::all()->count();
-			$split = (float)($splits->weDonate) / $causes_count;
-			DB::table('causes')->where('active', 1)->increment('total_donations', $split);
+                // Split if for each donation too
+                $causes_count = Cause::all()->count();
+                $split = (float)($splits->weDonate) / $causes_count;
+                DB::table('causes')->where('active', 1)->increment('total_donations', $split);
 
-			// TODO: Do rank
-			$ranks = UserProfile::all();
-			$ranks = $ranks->sortByDesc('total_donations');
+                // TODO: Do rank
+                $ranks = UserProfile::all();
+                $ranks = $ranks->sortByDesc('total_donations');
 
-			$count = 1;
-			foreach ($ranks as $rank) {
-				$rank->ranking = $count;
-				$rank->save();
-				$count++;
-			}
+                $count = 1;
+                foreach ($ranks as $rank) {
+                    $rank->ranking = $count;
+                    $rank->save();
+                    $count++;
+                }
 
-			Log::info('Donation paid');
+                Log::info('Donation paid');
+                // If we reach here, then
+                // data is valid and working.
+                // Commit the queries!
+                DB::commit();
+                return redirect(route('getDonationSuccess', $payment->uuid));
+            }
+            else {
 
-			return redirect(route('getDonationSuccess', $payment->uuid));
-		}
-		else {
+                $message = $response->getMessage();
+                Log::debug($message);
 
-			$message = $response->getMessage();
-			Log::debug($message);
+                $donation_errors = new PaymentError;
+                $donation_errors->uuid = Uuid::generate(4);
+                $donation_errors->payment_id = $payment->id;
+                $donation_errors->error_message = $message;
+                $donation_errors->save();
 
-			$donation_errors = new PaymentError;
-			$donation_errors->uuid = Uuid::generate(4);
-			$donation_errors->payment_id = $payment->id;
-			$donation_errors->error_message = $message;
-			$donation_errors->save();
+                $user = Auth::user();
 
-			$user = Auth::user();
+                $data = new \stdClass();
+                $data->title =
 
-			$data = new \stdClass();
-			$data->title =
+                Log::debug('Donation Unsuccessful by the user_id='.Auth::user()->id);
 
-			Log::debug('Donation Unsuccessful by the user_id='.Auth::user()->id);
+                Mail::send('emails.donate-result', $data, function($m) {
+                $m->to($user->email, $user->name)->subject('weDonate - Donation Unsuccessful!');
+                 });
+                // If we reach here, then
+                // data is valid and working.
+                // Commit the queries!
+                DB::commit();
+                return redirect(route('getDonationFailure', $payment->uuid));
+            }
 
-			Mail::send('emails.donate-result', $data, function($m) {
-	        $m->to($user->email, $user->name)->subject('weDonate - Donation Unsuccessful!');
-	    });
-
-			return redirect(route('getDonationFailure', $payment->uuid));
-		}
-
+        }catch(Exception $e){
+            DB::rollback();
+            throw $e;
+        }
 	}
 
 	public function getDonationSuccess(Request $request, $uuid) {
+        try{
+            $payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
 
-		$payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
-
-		return view('donate.success')
-			->with('payment', $payment);
+            return view('donate.success')
+                ->with('payment', $payment);
+        }catch(Exception $e){
+            throw $e;
+        }
 
 	}
 
 	public function getDonationFailure(Request $request, $uuid) {
-		Log::info('Managing the donation failure'.$payment->id);
+        try{
+            Log::info('Managing the donation failure'.$payment->id);
 
-		$payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
-		$error = PaymentError::where('payment_id', '=', $payment->id)->first();
+            $payment = PaymentsStripe::where('uuid', '=', $uuid)->first();
+            $error = PaymentError::where('payment_id', '=', $payment->id)->first();
 
-		Log::debug('DonateController.getDonationFailure');
+            Log::debug('DonateController.getDonationFailure');
 
-		return view('donate.failure')
-			->with('payment', $payment)
-			->with('error', $error);
+            return view('donate.failure')
+                ->with('payment', $payment)
+                ->with('error', $error);
+        }catch(Exception $e){
+            throw $e;
+        }
 
 	}
 

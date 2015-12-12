@@ -1,5 +1,5 @@
 // GlOBALS
-const SITEURL = 'http://localhost:8000';
+const SITEURL = 'http://localhost/wedonate/public';
 //const SITEURL = 'http://wedonate.org';
 
 // Redirect after X amount of seconds

@@ -16,25 +16,26 @@ class DashController extends Controller {
 	* @return Response
 	*/
 	public function getDash(Request $request) {
+        try{
+            if (Auth::check()) {
 
-		if (Auth::check()) {
+                $user = Auth::user();
 
-			$user = Auth::user();
+                if ($user->hasRole('developer')) {
+                    return view('admin.dash');
+                }
+                else if ($user->hasRole('owner')) {
+                    return view('admin.dash');
+                }
+                else if ($user->hasRole('hr')) {
+                    return view('admin.dash');
+                }
+                else if ($user->hasRole('donator')) {
+                    return view('donator.dash');
+                }
 
-			if ($user->hasRole('developer')) {
-				return view('admin.dash');
-			}
-			else if ($user->hasRole('owner')) {
-				return view('admin.dash');
-			}
-			else if ($user->hasRole('hr')) {
-				return view('admin.dash');
-			}
-			else if ($user->hasRole('donator')) {
-				return view('donator.dash');
-			}
-
-		}
+            }
+        }catch(Exception $e){throw $e;}
 
 	}
 

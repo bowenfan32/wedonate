@@ -4,6 +4,8 @@ use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Database\Connection;
+use DB;
 
 use Webpatser\Uuid\Uuid;
 
@@ -33,46 +35,54 @@ class AdminWedonateController extends Controller {
 	}
 
 	public function postCause(Request $request, $uuid) {
+        try{
+            $cause = Cause::where('uuid', $uuid)->first();
 
-		$cause = Cause::where('uuid', $uuid)->first();
+            $cause->name = $request->input('name');
+            $cause->description = $request->input('description');
+            if ($request->has('DGR')) {
+                $cause->DGR = $request->input('DGR');
+            }
+            else {
+                $cause->DGR = 0;
+            }
+            if ($request->has('active')) {
+                $cause->active = $request->input('active');
+            }
+            else {
+                $cause->active = 0;
+            }
+            $cause->save();
 
-		$cause->name = $request->input('name');
-		$cause->description = $request->input('description');
-		if ($request->has('DGR')) {
-			$cause->DGR = $request->input('DGR');
-		}
-		else {
-			$cause->DGR = 0;
-		}
-		if ($request->has('active')) {
-			$cause->active = $request->input('active');
-		}
-		else {
-			$cause->active = 0;
-		}
-		$cause->save();
+            return redirect(route('getCause', ['uuid' => $cause->uuid]));
 
-		return redirect(route('getCause', ['uuid' => $cause->uuid]));
+        }catch(Exception $e){
+            throw $e;
+        }
 
 	}
 
 	public function getCauses(Request $request) {
+        try{
+            $causes = Cause::all();
 
-		$causes = Cause::all();
+            Log::info('Getting list of causes');
 
-		Log::info('Getting list of causes');
-
-		return view('admin.wedonate.causes')
-			->with('causes', $causes);
-
+            return view('admin.wedonate.causes')
+                ->with('causes', $causes);
+        }catch(Exception $e){
+            throw $e;
+        }
 	}
     public function getBreakdown(Request $request) {
-
+        try{
         $causes = Cause::all();
 
         return view('admin.wedonate.breakdown')
             ->with('causes', $causes);
-
+        }catch(Exception $e){
+            throw $e;
+        }
     }
 
 
@@ -84,6 +94,8 @@ class AdminWedonateController extends Controller {
 
 	public function postCausesCreate(Request $request) {
 
+        //Start transaction
+        DB::beginTransaction();
         // create the validation rules ------------------------
         $rules = array(
                 'name' => 'Required|Unique:causes',
@@ -101,151 +113,169 @@ class AdminWedonateController extends Controller {
             return redirect(route('getCausesCreate'))
                 ->withErrors($validator);
         } else {
-
         // validation successful ---------------------------
-		$cause = new Cause;
-		$cause->uuid = Uuid::generate(4);
-		$cause->name = $request->input('name');
-		$cause->description = $request->input('description');
-		if ($request->has('DGR')) {
-			$cause->DGR = $request->input('DGR');
-		}
-		else {
-			$cause->DGR = 0;
-		}
-		if ($request->has('active')) {
-			$cause->active = $request->input('active');
-		}
-		else {
-			$cause->active = 0;
-		}
-		$cause->total_donations = 0;
-		$cause->number_of_donations = 0;
-		$cause->save();
+        try{
 
-		$cause_meta = new CauseMeta;
-		$cause_meta->cause_id = $cause->id;
-		$cause_meta->save();
+            $cause = new Cause;
+            $cause->uuid = Uuid::generate(4);
+            $cause->name = $request->input('name');
+            $cause->description = $request->input('description');
+            if ($request->has('DGR')) {
+                $cause->DGR = $request->input('DGR');
+            }
+            else {
+                $cause->DGR = 0;
+            }
+            if ($request->has('active')) {
+                $cause->active = $request->input('active');
+            }
+            else {
+                $cause->active = 0;
+            }
+            $cause->total_donations = 0;
+            $cause->number_of_donations = 0;
+            $cause->save();
 
-		Log::info('Cause created successfully id='.$cause->id);
+            //create cause meta
+            $cause_meta = new CauseMeta;
+            $cause_meta->cause_id = $cause->id;
+            $cause_meta->save();
 
-		return redirect(route('getCausesCreate'))
-            ->withFlashMessage('Causes created.');
+            Log::info('Cause created successfully id='.$cause->id);
+
+            // If we reach here, then
+            // data is valid and working.
+            // Commit the queries!
+            DB::commit();
+            return redirect(route('getCausesCreate'))
+                ->withFlashMessage('Causes created.');
+
+        }catch(Exception $e){
+            DB::rollback();
+            throw $e;
         }
-
+        }
 	}
 
 	public function getCausesEdit(Request $request, $uuid) {
+        try{
 
-		$cause = Cause::where('uuid', $uuid)->first();
+            $cause = Cause::where('uuid', $uuid)->first();
 
-		return view('admin.wedonate.causes_edit')
-			->with('cause', $cause);
-
+            return view('admin.wedonate.causes_edit')
+                ->with('cause', $cause);
+        }catch(Exception $e){throw $e;}
 	}
 
 	public function postCausesEdit(Request $request, $uuid) {
+        try{
+            $cause = Cause::where('uuid', $uuid)->first();
 
-		$cause = Cause::where('uuid', $uuid)->first();
+            $cause->name = $request->input('name');
+            $cause->description = $request->input('description');
+            if ($request->has('DGR')) {
+                $cause->DGR = $request->input('DGR');
+            }
+            else {
+                $cause->DGR = 0;
+            }
+            if ($request->has('active')) {
+                $cause->active = $request->input('active');
+            }
+            else {
+                $cause->active = 0;
+            }
+            $cause->save();
 
-		$cause->name = $request->input('name');
-		$cause->description = $request->input('description');
-		if ($request->has('DGR')) {
-			$cause->DGR = $request->input('DGR');
-		}
-		else {
-			$cause->DGR = 0;
-		}
-		if ($request->has('active')) {
-			$cause->active = $request->input('active');
-		}
-		else {
-			$cause->active = 0;
-		}
-		$cause->save();
+            Log::info('Cause edited successfully! id='.$uudi);
 
-		Log::info('Cause edited successfully! id='.$uudi);
+            return redirect(route('getCauses'));
+        }catch(Exception $e){throw $e;}
 
-		return redirect(route('getCauses'));
 
 	}
 
 	// TDOO: Fix to use AWS, store image properly in db, have multiple sizing. etc.
 	public function postCauseImage(Request $request, $uuid) {
+        try{
+            $cause = Cause::where('uuid', $uuid)->first();
 
-		$cause = Cause::where('uuid', $uuid)->first();
 
+            // Local
+            // $storage_location = '/public/uploads/ci/';
+            // $url_location = '/uploads/ci/';
 
-		// Local
-		// $storage_location = '/public/uploads/ci/';
-		// $url_location = '/uploads/ci/';
+            $storage_location = '/home/wedonate/public/uploads/ci/';
+            $url_location = '/uploads/ci/';
 
-		$storage_location = '/home/wedonate/public/uploads/ci/';
-		$url_location = '/uploads/ci/';
+            File::delete(base_path() . $storage_location . $cause->image);
 
-		File::delete(base_path() . $storage_location . $cause->image);
+            // Upload it
+            $image_name = Uuid::generate(4) . '.' . $request->file('file')->getClientOriginalExtension();
+            // $request->file('file')->move(base_path() . $storage_location, $image_name);
+            $request->file('file')->move('/home/wedonate/public_html/uploads/ci/', $image_name);
 
-		// Upload it
-		$image_name = Uuid::generate(4) . '.' . $request->file('file')->getClientOriginalExtension();
-		// $request->file('file')->move(base_path() . $storage_location, $image_name);
-		$request->file('file')->move('/home/wedonate/public_html/uploads/ci/', $image_name);
+            // Setup our media to be saved
+            $cause->image = $image_name;
+            $cause->save();
 
-		// Setup our media to be saved
-		$cause->image = $image_name;
-		$cause->save();
+            Log::info('Image cause registered, image_name: '.$image_name);
 
-		Log::info('Image cause registered, image_name: '.$image_name);
-
-    return [
-			'success' => '1',
-			'url', $cause->image
-		];
+            return [
+                    'success' => '1',
+                    'url', $cause->image
+            ];
+        }catch(Exception $e){throw $e;}
 
 	}
 
 	public function getCauseRemove(Request $request, $uuid) {
+        try{
+            $cause = Cause::where('uuid', $uuid)->delete();
 
-		$cause = Cause::where('uuid', $uuid)->delete();
+            Log::info('Cause deleted id='.$uudi);
 
-		Log::info('Cause deleted id='.$uudi);
-
-		return redirect(route('getCauses'));
+            return redirect(route('getCauses'));
+        }catch(Exception $e){throw $e;}
 
 	}
+
     //USERs
 	public function getUsers(Request $request) {
+        try{
+            $users = User::all();
 
-		$users = User::all();
-
-		return view('admin.wedonate.users')
-			->with('users', $users);
-
-	}
+            return view('admin.wedonate.users')
+                ->with('users', $users);
+        }catch(Exception $e){throw $e;}
+    }
 
 	public function getUserEdit(Request $request, $uuid) {
+        try{
+            $user = User::where('uuid', '=', $uuid)->first();
+            $profile = UserProfile::where('user_id','=',$user->id)->first();
 
-		$user = User::where('uuid', '=', $uuid)->first();
-        $profile = UserProfile::where('user_id','=',$user->id)->first();
-
-		return view('admin.wedonate.user')
-			->with('user', $user)
-            ->with('profile',$profile);
-
+            return view('admin.wedonate.user')
+                ->with('user', $user)
+                ->with('profile',$profile);
+        }catch(Exception $e){throw $e;}
 	}
 
 	public function getUserCreate(Request $request) {
+        try{
+            $roles = Role::all();
 
-		$roles = Role::all();
-
-		return view('admin.wedonate.user_create')
-			->with('roles', $roles);
-
+            return view('admin.wedonate.user_create')
+                ->with('roles', $roles);
+        }catch(Exception $e){throw $e;}
 	}
 
 
 	public function postUserCreate(Request $request) {
 
-        // try {
+        //Start transaction
+        DB::beginTransaction();
+        try {
 
         $firstname = $request->input('firstname');
         $lastname = $request->input('lastname');
@@ -253,7 +283,7 @@ class AdminWedonateController extends Controller {
         $username = $request->input('email');
         $password = $request->input('password');
 
-        try {
+            try{
             $user = User::where('email', '=', $email)->first();
             if ($user) {
                 return [
@@ -263,44 +293,53 @@ class AdminWedonateController extends Controller {
                     'redirect' => ''
                 ];
             }
-        } catch (Exception $e) {}
+            } catch (Exception $e) {}
 
         // TODO: create a globa function to create a user
 
-        $user = new User;
-        $user->uuid = Uuid::generate(4);
-        $user->registered_ip = $_SERVER['REMOTE_ADDR'];
-        $user->registered_provider = 'email';
-        $user->last_login_ip = null;
-        $user->last_login_datetime = date('Y-m-d H:i:s');
-        $user->email = $email;
-        $user->username = $email;
-        $user->password = Hash::make($password);
-        $user->referrer_code = Uuid::generate(1, '0123456');
-        $user->save();
+            $user = new User;
+            $user->uuid = Uuid::generate(4);
+            $user->registered_ip = $_SERVER['REMOTE_ADDR'];
+            $user->registered_provider = 'email';
+            $user->last_login_ip = null;
+            $user->last_login_datetime = date('Y-m-d H:i:s');
+            $user->email = $email;
+            $user->username = $email;
+            $user->password = Hash::make($password);
+            $user->referrer_code = Uuid::generate(1, '0123456');
+            $user->save();
 
-        $profile = new UserProfile;
-        $profile->user_id = $user->id;
-        $profile->firstname = $firstname;
-        $profile->lastname = $lastname;
-        if ($request->has('referrer')) {
-            $profile->referrer_id = User::where('referrer_code', '=', $request->has('referrer_code'))->first();
+            $profile = new UserProfile;
+            $profile->user_id = $user->id;
+            $profile->firstname = $firstname;
+            $profile->lastname = $lastname;
+            if ($request->has('referrer')) {
+                $profile->referrer_id = User::where('referrer_code', '=', $request->has('referrer_code'))->first();
+            }
+            $profile->ranking = (int)(User::all()->count());
+            $profile->save();
+
+
+            $role = Role::where('id', '=', $request->input('role'))->first();
+            $user->attachRole($role);
+
+                    Log::info('User created, id='.$user->uuid);
+
+            //send email
+            $message = $this -> sendEmail($email,$user->id);
+
+
+            // If we reach here, then
+            // data is valid and working.
+            // Commit the queries!
+            DB::commit();
+            return redirect(route('getUserCreate'))
+                ->withFlashMessage($message);
+
+        }catch(Exception $e){
+            DB::rollback();
+            throw $e;
         }
-        $profile->ranking = (int)(User::all()->count());
-        $profile->save();
-
-
-        $role = Role::where('id', '=', $request->input('role'))->first();
-		$user->attachRole($role);
-
-				Log::info('User created, id='.$user->uuid);
-
-        //send email
-        $message = $this -> sendEmail($email,$user->id);
-
-		return redirect(route('getUserCreate'))
-			->withFlashMessage($message);
-
 	}
 
     public function sendEmail($email,$user_id){
@@ -335,37 +374,38 @@ class AdminWedonateController extends Controller {
                 }
             }
             return $msg;
-        } catch (Exception $e) {}
+        } catch (Exception $e) {throw $e;}
 
     }
 
     public function postUserEdit(Request $request, $uuid) {
+        try{
+            $user = User::where('uuid', $uuid)->first();
+            $profile = UserProfile::where('user_id', $user->id)->first();
+            if($user && $profile){
+                $user->email = $request->input('email');
+                $profile->firstname = $request->input('firstname');
+                $profile->lastname = $request->input('lastname');
+                $user->save();
+                $profile->save();
+            }
 
-        $user = User::where('uuid', $uuid)->first();
-        $profile = UserProfile::where('user_id', $user->id)->first();
-        if($user && $profile){
-            $user->email = $request->input('email');
-            $profile->firstname = $request->input('firstname');
-            $profile->lastname = $request->input('lastname');
-            $user->save();
-            $profile->save();
-        }
-
-        return redirect(route('getUserEdit', $uuid))
-            ->withFlashMessage('User Updated Successfully.');
-
+            return redirect(route('getUserEdit', $uuid))
+                ->withFlashMessage('User Updated Successfully.');
+        } catch (Exception $e) {throw $e;}
     }
 
 
     public function getUserRemove(Request $request, $uuid) {
         try{
-        $user = User::where('uuid', $uuid)->first();
-        $profile = UserProfile::where('user_id', $user->id)->delete();
-        $user = User::where('uuid', $uuid)->delete();
-        }catch (Exception $e) {}
+            $user = User::where('uuid', $uuid)->first();
+            $profile = UserProfile::where('user_id', $user->id)->delete();
+            $user = User::where('uuid', $uuid)->delete();
 
-        return redirect(route('getUsers'))
-            ->withFlashMessage('User Deleted Successfully.');
+            return redirect(route('getUsers'))
+                ->withFlashMessage('User Deleted Successfully.');
+        }catch (Exception $e) {throw $e;}
+
 
     }
 

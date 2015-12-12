@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-
+use DB;
 use Illuminate\Http\Request;
 use Log;
 use App\Models\Cause;
@@ -50,15 +50,17 @@ class PageController extends BaseController {
 	}
 
 	public function getDonate(Request $request) {
+        try{
+            $causes = Cause::where('active', 1)->get();
+            $causeofthemonth = SectionMeta::where('meta_key', 'sort')->get();
 
-		$causes = Cause::where('active', 1)->get();
-		$causeofthemonth = SectionMeta::where('meta_key', 'sort')->get();
-
-		return view('page.donate')
-			->with('causes', $causes)
-			->with('causeofthemonth', $causeofthemonth);
-
-	}
+            return view('page.donate')
+                ->with('causes', $causes)
+                ->with('causeofthemonth', $causeofthemonth);
+        }catch(Exception $e){
+            throw $e;
+        }
+    }
 
 	public function getVolunteer(Request $request) {
 

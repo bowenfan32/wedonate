@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-
+use DB;
 use Illuminate\Http\Request;
 
 use App\Models\Section;
@@ -55,37 +55,49 @@ class SectionController extends BaseController {
 
 	public function postCauseoftheMonthAdd(Request $request) {
 
-		$exists = SectionMeta::where('meta_key', 'cause_id')->where('meta_value', $request->input('cause_id'))->first();
-		if ($exists) {
-			return [
-				'success' => '0',
-				'results' => $exists,
-				'message' => 'Already exists.'
-			];
-		}
-		$new_causeofmonth = new SectionMeta;
-		$new_causeofmonth->section_id = 1;
-		$new_causeofmonth->meta_key = 'cause_id';
-		$new_causeofmonth->meta_value = $request->input('cause_id');
-		$new_causeofmonth->save();
+        //Start transaction
+        DB::beginTransaction();
+        try{
+            $exists = SectionMeta::where('meta_key', 'cause_id')->where('meta_value', $request->input('cause_id'))->first();
+            if ($exists) {
+                return [
+                    'success' => '0',
+                    'results' => $exists,
+                    'message' => 'Already exists.'
+                ];
+            }
+            $new_causeofmonth = new SectionMeta;
+            $new_causeofmonth->section_id = 1;
+            $new_causeofmonth->meta_key = 'cause_id';
+            $new_causeofmonth->meta_value = $request->input('cause_id');
+            $new_causeofmonth->save();
 
-		$sort = new SectionMeta;
-		$sort->section_id = 1;
-		$sort->meta_key = 'sort';
-		$sort->meta_value = $new_causeofmonth->id;
-		$sort->meta_value_2 = (SectionMeta::where('meta_key', 'sort')->count()) + 1;
-		$sort->save();
+            $sort = new SectionMeta;
+            $sort->section_id = 1;
+            $sort->meta_key = 'sort';
+            $sort->meta_value = $new_causeofmonth->id;
+            $sort->meta_value_2 = (SectionMeta::where('meta_key', 'sort')->count()) + 1;
+            $sort->save();
 
-		$cause = Cause::where('id', $request->input('cause_id'))->first();
+            $cause = Cause::where('id', $request->input('cause_id'))->first();
 
-		return [
-			'success' => '1',
-			'results' => [
-				'sort_id' => $sort->meta_value,
-				'cause' => $cause
-			],
-			'messages' => 'Added.'
-		];
+            // If we reach here, then
+            // data is valid and working.
+            // Commit the queries!
+            DB::commit();
+            return [
+                'success' => '1',
+                'results' => [
+                    'sort_id' => $sort->meta_value,
+                    'cause' => $cause
+                ],
+                'messages' => 'Added.'
+            ];
+
+        }catch(Exception $e){
+            DB::rollback();
+            throw $e;
+        }
 	}
 
 	public function postCauseoftheMonthSort(Request $request) {
@@ -107,21 +119,34 @@ class SectionController extends BaseController {
 
 	public function postCauseoftheMonthRemove(Request $request) {
 
-		$items = $request->input('mark');
+        //Start transaction
+        DB::beginTransaction();
+        try{
+            $items = $request->input('mark');
 
-		foreach($items as $item) {
-			$item = SectionMeta::where('meta_key', 'sort')->where('meta_value', $item)->first();
-			$cause_id = $item->meta_value_2;
-			$item = SectionMeta::where('meta_key', 'sort')->where('meta_value_2', $cause_id)->delete();
-			$item = SectionMeta::where('meta_key', 'cause_id')->where('meta_value', $cause_id)->delete();
-		}
+            foreach($items as $item) {
+                $item = SectionMeta::where('meta_key', 'sort')->where('meta_value', $item)->first();
+                $cause_id = $item->meta_value_2;
+                $item = SectionMeta::where('meta_key', 'sort')->where('meta_value_2', $cause_id)->delete();
+                $item = SectionMeta::where('meta_key', 'cause_id')->where('meta_value', $cause_id)->delete();
+            }
 
-		return [
-			'success' => '1',
-			'messages' => 'Deleted.',
-			'results' => $items
-		];
 
+            // If we reach here, then
+            // data is valid and working.
+            // Commit the queries!
+            DB::commit();
+
+            return [
+                'success' => '1',
+                'messages' => 'Deleted.',
+                'results' => $items
+            ];
+
+        }catch(Exception $e){
+            DB::rollback();
+            throw $e;
+        }
 	}
 
 }
