@@ -43,6 +43,10 @@
       						<label>Password</label>
       						<input type="password" name="password" class="form-control" placeholder="password" minlength="6" required>
       					</div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" name="password-confirm" id="password-confirm" class="form-control" placeholder="password" data-parsley-equalto="#password" required>
+                        </div>
     						<input type="hidden" name="referrer" class="form-control">
       					<!-- <div class="form-group">
       						<label>Check</label>
