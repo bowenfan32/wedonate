@@ -1,7 +1,3 @@
-@extends('layouts.default_landing')
-
-@section('content')
-
 <section class="sponsor-greywing" style="padding: 150px 50px;">
 	<div class="container">
 		<div class="row">
@@ -22,9 +18,3 @@
 		</div>
 	</div>
 </section>
-
-@stop
-
-@section('js')
-
-@stop

@@ -14,15 +14,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-				<li><a href="{{ route('getHome') }}">Volunteer</a></li>
-				<li><a href="{{ route('getAbout') }}">About we</a></li>
+				<li><a onclick="scrollToDiv('#volunteer')">Volunteer</a></li>
+				<li><a onclick="scrollToDiv('#about')">About we</a></li>
         @if (Auth::check())
           <li><a href="#" data-toggle="modal" data-target="#global-donate-popup">Donate Now</a></li>
         @else
           <li><a href="#" data-toggle="modal" data-target="#global-connect-popup">Connect</a></li>
         @endif
-				<li><a href="{{ route('getDonate') }}">Donate</a></li>
-				<li><a href="{{ route('getSponsors') }}">Sponsors</a></li>
+				<li><a onclick="scrollToDiv('#donate')">Donate</a></li>
+				<li><a onclick="scrollToDiv('#sponsors')">Sponsors</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#global-share-popup">Share</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

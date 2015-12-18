@@ -41,8 +41,17 @@
     <header  class="site-header">
         @include('interface.landing')
     </header>
-    <div class="site-content">
+    <div id="volunteer" class="site-content">
         @yield('content')
+    </div>
+    <div id="donate" class="site-content">
+        @include('page.donate')
+    </div>
+    <div id="sponsors" class="site-content">
+        @include('page.sponsors')
+    </div>
+    <div id="about" class="site-content">
+        @include('page.about')
     </div>
     <footer id="footer" class="site-footer">
         @include('interface.footer')

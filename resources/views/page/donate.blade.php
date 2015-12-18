@@ -1,7 +1,3 @@
-@extends('layouts.default_landing')
-
-@section('content')
-
 <section class="bg bg-grey c-fff ta-center" style="padding: 80px 50px;">
 	<div class="container">
 		<div class="vertical-center">
@@ -109,10 +105,3 @@
 		</div>
 	</div>
 </section>
-
-
-@stop
-
-@section('js')
-
-@stop

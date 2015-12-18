@@ -1,6 +1,7 @@
 // GlOBALS
-const SITEURL = 'http://localhost/wedonate/public';
+//const SITEURL = 'http://localhost/wedonate/public';
 //const SITEURL = 'http://wedonate.org';
+const SITEURL = 'http://localhost:8000';
 
 // Redirect after X amount of seconds
 function countdown_redirect(url) {
@@ -436,3 +437,11 @@ $(".carousel-cause .image").click(function(){
     $("#"+this.id).addClass('selected');
 
 });
+
+
+function scrollToDiv(myDiv) {
+      slideout.toggle();
+      $('html, body').animate({
+      scrollTop: $(myDiv).offset().top
+  }, 'slow');
+}
