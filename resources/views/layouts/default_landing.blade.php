@@ -36,7 +36,7 @@
 
 <main id="panel">
     @if (Auth::check())
-    <h2>Welcome {{ Auth::user()->profile->display_name }} </h2>
+    <h2>Welcome {{ Auth::user()->profile->firstname }} </h2>
     @endif
     <header  class="site-header">
         @include('interface.landing')
