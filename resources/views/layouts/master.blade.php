@@ -40,5 +40,10 @@
 	<script src="{{ asset('/js/app.js') }}"></script>
 	@yield('js_master')
 
+	<script type="text/javascript">
+		// Set the global value for later JS use
+		var SITEURL = {!! json_encode(url('/')) !!};
+	</script>
+
 </body>
 </html>

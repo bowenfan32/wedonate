@@ -1,6 +1,5 @@
 // GlOBALS
-const SITEURL = 'http://localhost/wedonate/public';
-//const SITEURL = 'http://wedonate.org';
+//const SITEURL is set in master.blade.php to be the base url of the application
 
 // Redirect after X amount of seconds
 function countdown_redirect(url) {
@@ -57,7 +56,8 @@ function getUrlParameter(sParam) {
 
 $(document).ready(function() {
     window.setTimeout(function () {
-        var r = getUrlParameter('r');
+    	
+       var r = getUrlParameter('r');
         if (window.location.href == SITEURL) {
             $('#global-connect-popup #registerForm input[name=referrer]').val(r);
         }
